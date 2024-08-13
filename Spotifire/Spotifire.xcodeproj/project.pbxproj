@@ -10,6 +10,33 @@
 		24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */; };
 		24E3FEAA2C64CC27005D2C3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEA92C64CC27005D2C3E /* Base */; };
 		24E3FEB82C64D04E005D2C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEB72C64D04E005D2C3E /* Assets.xcassets */; };
+		24E3FECA2C6B9AE3005D2C3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEC92C6B9AE3005D2C3E /* ViewController.swift */; };
+		24E3FECC2C6B9AFD005D2C3E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FECB2C6B9AFD005D2C3E /* View.swift */; };
+		24E3FECE2C6B9B25005D2C3E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FECD2C6B9B25005D2C3E /* String+Ext.swift */; };
+		24E3FED02C6B9B3F005D2C3E /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FECF2C6B9B3F005D2C3E /* UIView+Ext.swift */; };
+		24E3FED22C6BA138005D2C3E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FED12C6BA138005D2C3E /* Localizable.xcstrings */; };
+		24E3FED42C6BA168005D2C3E /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FED32C6BA168005D2C3E /* Label.swift */; };
+		24E3FED62C6BA227005D2C3E /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FED52C6BA227005D2C3E /* UIFont+Ext.swift */; };
+		24E3FEE32C6BA409005D2C3E /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FED72C6BA408005D2C3E /* NotoSans-Italic.ttf */; };
+		24E3FEE42C6BA409005D2C3E /* NotoSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FED82C6BA408005D2C3E /* NotoSans-LightItalic.ttf */; };
+		24E3FEE52C6BA409005D2C3E /* NotoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FED92C6BA408005D2C3E /* NotoSans-ExtraLightItalic.ttf */; };
+		24E3FEE62C6BA409005D2C3E /* NotoSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEDA2C6BA409005D2C3E /* NotoSans-MediumItalic.ttf */; };
+		24E3FEE72C6BA409005D2C3E /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEDB2C6BA409005D2C3E /* NotoSans-SemiBold.ttf */; };
+		24E3FEE82C6BA409005D2C3E /* NotoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEDC2C6BA409005D2C3E /* NotoSans-SemiBoldItalic.ttf */; };
+		24E3FEE92C6BA409005D2C3E /* NotoSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEDD2C6BA409005D2C3E /* NotoSans-ThinItalic.ttf */; };
+		24E3FEEA2C6BA409005D2C3E /* NotoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEDE2C6BA409005D2C3E /* NotoSans-ExtraLight.ttf */; };
+		24E3FEEB2C6BA409005D2C3E /* NotoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEDF2C6BA409005D2C3E /* NotoSans-Light.ttf */; };
+		24E3FEEC2C6BA409005D2C3E /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEE02C6BA409005D2C3E /* NotoSans-Regular.ttf */; };
+		24E3FEED2C6BA409005D2C3E /* NotoSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEE12C6BA409005D2C3E /* NotoSans-Thin.ttf */; };
+		24E3FEEE2C6BA409005D2C3E /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEE22C6BA409005D2C3E /* NotoSans-Medium.ttf */; };
+		24E3FEF02C6BA60F005D2C3E /* FontConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEEF2C6BA60F005D2C3E /* FontConstant.swift */; };
+		24E3FEF22C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEF12C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift */; };
+		24E3FEF42C6BAE66005D2C3E /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEF32C6BAE66005D2C3E /* With.swift */; };
+		24E3FEF62C6BB476005D2C3E /* Dequeueable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEF52C6BB476005D2C3E /* Dequeueable+Ext.swift */; };
+		24E3FEF82C6BB515005D2C3E /* Fillable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEF72C6BB515005D2C3E /* Fillable.swift */; };
+		24E3FEFA2C6BB688005D2C3E /* InteractiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEF92C6BB688005D2C3E /* InteractiveView.swift */; };
+		24E3FEFF2C6BBD44005D2C3E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEFD2C6BBD44005D2C3E /* TestViewController.swift */; };
+		24E3FF002C6BBD44005D2C3E /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEFE2C6BBD44005D2C3E /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +45,33 @@
 		24E3FEA92C64CC27005D2C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24E3FEAB2C64CC27005D2C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24E3FEB72C64D04E005D2C3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24E3FEC92C6B9AE3005D2C3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24E3FECB2C6B9AFD005D2C3E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		24E3FECD2C6B9B25005D2C3E /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		24E3FECF2C6B9B3F005D2C3E /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		24E3FED12C6BA138005D2C3E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = Spotifire/Localizable.xcstrings; sourceTree = SOURCE_ROOT; };
+		24E3FED32C6BA168005D2C3E /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		24E3FED52C6BA227005D2C3E /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		24E3FED72C6BA408005D2C3E /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		24E3FED82C6BA408005D2C3E /* NotoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		24E3FED92C6BA408005D2C3E /* NotoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		24E3FEDA2C6BA409005D2C3E /* NotoSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		24E3FEDB2C6BA409005D2C3E /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		24E3FEDC2C6BA409005D2C3E /* NotoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		24E3FEDD2C6BA409005D2C3E /* NotoSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		24E3FEDE2C6BA409005D2C3E /* NotoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		24E3FEDF2C6BA409005D2C3E /* NotoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Light.ttf"; sourceTree = "<group>"; };
+		24E3FEE02C6BA409005D2C3E /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		24E3FEE12C6BA409005D2C3E /* NotoSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Thin.ttf"; sourceTree = "<group>"; };
+		24E3FEE22C6BA409005D2C3E /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		24E3FEEF2C6BA60F005D2C3E /* FontConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstant.swift; sourceTree = "<group>"; };
+		24E3FEF12C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Ext.swift"; sourceTree = "<group>"; };
+		24E3FEF32C6BAE66005D2C3E /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
+		24E3FEF52C6BB476005D2C3E /* Dequeueable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dequeueable+Ext.swift"; sourceTree = "<group>"; };
+		24E3FEF72C6BB515005D2C3E /* Fillable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fillable.swift; sourceTree = "<group>"; };
+		24E3FEF92C6BB688005D2C3E /* InteractiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveView.swift; sourceTree = "<group>"; };
+		24E3FEFD2C6BBD44005D2C3E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		24E3FEFE2C6BBD44005D2C3E /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +106,8 @@
 			children = (
 				24E3FEB12C64CD4D005D2C3E /* Application */,
 				24E3FEB22C64CD5E005D2C3E /* Resources */,
+				24E3FEBA2C6B90D7005D2C3E /* Screens */,
+				24E3FEBB2C6B90E9005D2C3E /* Shared */,
 			);
 			path = Spotifire;
 			sourceTree = "<group>";
@@ -60,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */,
+				24E3FEA82C64CC27005D2C3E /* LaunchScreen.storyboard */,
+				24E3FEAB2C64CC27005D2C3E /* Info.plist */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -67,11 +125,98 @@
 		24E3FEB22C64CD5E005D2C3E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				24E3FEA82C64CC27005D2C3E /* LaunchScreen.storyboard */,
-				24E3FEAB2C64CC27005D2C3E /* Info.plist */,
 				24E3FEB72C64D04E005D2C3E /* Assets.xcassets */,
+				24E3FEB92C6B90CE005D2C3E /* Font */,
+				24E3FED12C6BA138005D2C3E /* Localizable.xcstrings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		24E3FEB92C6B90CE005D2C3E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FEDE2C6BA409005D2C3E /* NotoSans-ExtraLight.ttf */,
+				24E3FED92C6BA408005D2C3E /* NotoSans-ExtraLightItalic.ttf */,
+				24E3FED72C6BA408005D2C3E /* NotoSans-Italic.ttf */,
+				24E3FEDF2C6BA409005D2C3E /* NotoSans-Light.ttf */,
+				24E3FED82C6BA408005D2C3E /* NotoSans-LightItalic.ttf */,
+				24E3FEE22C6BA409005D2C3E /* NotoSans-Medium.ttf */,
+				24E3FEDA2C6BA409005D2C3E /* NotoSans-MediumItalic.ttf */,
+				24E3FEE02C6BA409005D2C3E /* NotoSans-Regular.ttf */,
+				24E3FEDB2C6BA409005D2C3E /* NotoSans-SemiBold.ttf */,
+				24E3FEDC2C6BA409005D2C3E /* NotoSans-SemiBoldItalic.ttf */,
+				24E3FEE12C6BA409005D2C3E /* NotoSans-Thin.ttf */,
+				24E3FEDD2C6BA409005D2C3E /* NotoSans-ThinItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		24E3FEBA2C6B90D7005D2C3E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FEFD2C6BBD44005D2C3E /* TestViewController.swift */,
+				24E3FEFE2C6BBD44005D2C3E /* TestViewController.xib */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		24E3FEBB2C6B90E9005D2C3E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FEC12C6B917C005D2C3E /* Libraries */,
+				24E3FEC02C6B916E005D2C3E /* Alerts */,
+				24E3FEBE2C6B912D005D2C3E /* Base */,
+				24E3FEBD2C6B90FE005D2C3E /* Constants */,
+				24E3FEBC2C6B90F4005D2C3E /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		24E3FEBC2C6B90F4005D2C3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FED52C6BA227005D2C3E /* UIFont+Ext.swift */,
+				24E3FECD2C6B9B25005D2C3E /* String+Ext.swift */,
+				24E3FECF2C6B9B3F005D2C3E /* UIView+Ext.swift */,
+				24E3FEF12C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift */,
+				24E3FEF32C6BAE66005D2C3E /* With.swift */,
+				24E3FEF52C6BB476005D2C3E /* Dequeueable+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		24E3FEBD2C6B90FE005D2C3E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FEEF2C6BA60F005D2C3E /* FontConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		24E3FEBE2C6B912D005D2C3E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FEC92C6B9AE3005D2C3E /* ViewController.swift */,
+				24E3FECB2C6B9AFD005D2C3E /* View.swift */,
+				24E3FEF92C6BB688005D2C3E /* InteractiveView.swift */,
+				24E3FED32C6BA168005D2C3E /* Label.swift */,
+				24E3FEF72C6BB515005D2C3E /* Fillable.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		24E3FEC02C6B916E005D2C3E /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		24E3FEC12C6B917C005D2C3E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +261,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 24E3FE912C64CC25005D2C3E;
 			productRefGroup = 24E3FE9B2C64CC25005D2C3E /* Products */;
@@ -133,7 +279,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E3FEB82C64D04E005D2C3E /* Assets.xcassets in Resources */,
+				24E3FEEA2C6BA409005D2C3E /* NotoSans-ExtraLight.ttf in Resources */,
+				24E3FEEC2C6BA409005D2C3E /* NotoSans-Regular.ttf in Resources */,
+				24E3FEE52C6BA409005D2C3E /* NotoSans-ExtraLightItalic.ttf in Resources */,
+				24E3FEE92C6BA409005D2C3E /* NotoSans-ThinItalic.ttf in Resources */,
+				24E3FEE82C6BA409005D2C3E /* NotoSans-SemiBoldItalic.ttf in Resources */,
+				24E3FF002C6BBD44005D2C3E /* TestViewController.xib in Resources */,
+				24E3FEE72C6BA409005D2C3E /* NotoSans-SemiBold.ttf in Resources */,
+				24E3FEE62C6BA409005D2C3E /* NotoSans-MediumItalic.ttf in Resources */,
+				24E3FEED2C6BA409005D2C3E /* NotoSans-Thin.ttf in Resources */,
 				24E3FEAA2C64CC27005D2C3E /* Base in Resources */,
+				24E3FEEB2C6BA409005D2C3E /* NotoSans-Light.ttf in Resources */,
+				24E3FED22C6BA138005D2C3E /* Localizable.xcstrings in Resources */,
+				24E3FEE32C6BA409005D2C3E /* NotoSans-Italic.ttf in Resources */,
+				24E3FEE42C6BA409005D2C3E /* NotoSans-LightItalic.ttf in Resources */,
+				24E3FEEE2C6BA409005D2C3E /* NotoSans-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +304,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E3FEFF2C6BBD44005D2C3E /* TestViewController.swift in Sources */,
+				24E3FEF82C6BB515005D2C3E /* Fillable.swift in Sources */,
+				24E3FECC2C6B9AFD005D2C3E /* View.swift in Sources */,
+				24E3FEF22C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift in Sources */,
 				24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */,
+				24E3FEF62C6BB476005D2C3E /* Dequeueable+Ext.swift in Sources */,
+				24E3FEFA2C6BB688005D2C3E /* InteractiveView.swift in Sources */,
+				24E3FEF02C6BA60F005D2C3E /* FontConstant.swift in Sources */,
+				24E3FED62C6BA227005D2C3E /* UIFont+Ext.swift in Sources */,
+				24E3FEF42C6BAE66005D2C3E /* With.swift in Sources */,
+				24E3FED42C6BA168005D2C3E /* Label.swift in Sources */,
+				24E3FED02C6B9B3F005D2C3E /* UIView+Ext.swift in Sources */,
+				24E3FECE2C6B9B25005D2C3E /* String+Ext.swift in Sources */,
+				24E3FECA2C6B9AE3005D2C3E /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +463,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KMLPGRPUFB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Spotifire/Resources/Info.plist;
+				INFOPLIST_FILE = Spotifire/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -322,7 +495,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KMLPGRPUFB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Spotifire/Resources/Info.plist;
+				INFOPLIST_FILE = Spotifire/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
