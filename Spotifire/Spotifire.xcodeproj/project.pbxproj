@@ -37,6 +37,23 @@
 		24E3FEFA2C6BB688005D2C3E /* InteractiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEF92C6BB688005D2C3E /* InteractiveView.swift */; };
 		24E3FEFF2C6BBD44005D2C3E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FEFD2C6BBD44005D2C3E /* TestViewController.swift */; };
 		24E3FF002C6BBD44005D2C3E /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEFE2C6BBD44005D2C3E /* TestViewController.xib */; };
+		24E3FF1B2C6C8D43005D2C3E /* PanModalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF022C6C8D43005D2C3E /* PanModalAnimator.swift */; };
+		24E3FF1C2C6C8D43005D2C3E /* PanModalPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF032C6C8D43005D2C3E /* PanModalPresentationAnimator.swift */; };
+		24E3FF1D2C6C8D43005D2C3E /* PanModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF052C6C8D43005D2C3E /* PanModalPresentationController.swift */; };
+		24E3FF1E2C6C8D43005D2C3E /* PanModalPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF072C6C8D43005D2C3E /* PanModalPresentationDelegate.swift */; };
+		24E3FF1F2C6C8D43005D2C3E /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF092C6C8D43005D2C3E /* TransitionType.swift */; };
+		24E3FF202C6C8D43005D2C3E /* PanModalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF0B2C6C8D43005D2C3E /* PanModalHeight.swift */; };
+		24E3FF212C6C8D43005D2C3E /* PanModalPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF0C2C6C8D43005D2C3E /* PanModalPresentable.swift */; };
+		24E3FF222C6C8D43005D2C3E /* PanModalPresentable+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF0D2C6C8D43005D2C3E /* PanModalPresentable+Defaults.swift */; };
+		24E3FF232C6C8D43005D2C3E /* PanModalPresentable+LayoutHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF0E2C6C8D43005D2C3E /* PanModalPresentable+LayoutHelpers.swift */; };
+		24E3FF242C6C8D43005D2C3E /* PanModalPresentable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF0F2C6C8D43005D2C3E /* PanModalPresentable+UIViewController.swift */; };
+		24E3FF252C6C8D43005D2C3E /* TransitionPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF112C6C8D43005D2C3E /* TransitionPresentable.swift */; };
+		24E3FF262C6C8D43005D2C3E /* TransitionPresentable+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF122C6C8D43005D2C3E /* TransitionPresentable+Defaults.swift */; };
+		24E3FF272C6C8D43005D2C3E /* TransitionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF142C6C8D43005D2C3E /* TransitionPresenter.swift */; };
+		24E3FF282C6C8D43005D2C3E /* TransitionPresenter+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF152C6C8D43005D2C3E /* TransitionPresenter+UIViewController.swift */; };
+		24E3FF292C6C8D43005D2C3E /* DimmedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF172C6C8D43005D2C3E /* DimmedView.swift */; };
+		24E3FF2A2C6C8D43005D2C3E /* PanContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF182C6C8D43005D2C3E /* PanContainerView.swift */; };
+		24E3FF2C2C6C9048005D2C3E /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +89,23 @@
 		24E3FEF92C6BB688005D2C3E /* InteractiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveView.swift; sourceTree = "<group>"; };
 		24E3FEFD2C6BBD44005D2C3E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		24E3FEFE2C6BBD44005D2C3E /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		24E3FF022C6C8D43005D2C3E /* PanModalAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalAnimator.swift; sourceTree = "<group>"; };
+		24E3FF032C6C8D43005D2C3E /* PanModalPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalPresentationAnimator.swift; sourceTree = "<group>"; };
+		24E3FF052C6C8D43005D2C3E /* PanModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalPresentationController.swift; sourceTree = "<group>"; };
+		24E3FF072C6C8D43005D2C3E /* PanModalPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalPresentationDelegate.swift; sourceTree = "<group>"; };
+		24E3FF092C6C8D43005D2C3E /* TransitionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
+		24E3FF0B2C6C8D43005D2C3E /* PanModalHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalHeight.swift; sourceTree = "<group>"; };
+		24E3FF0C2C6C8D43005D2C3E /* PanModalPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalPresentable.swift; sourceTree = "<group>"; };
+		24E3FF0D2C6C8D43005D2C3E /* PanModalPresentable+Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PanModalPresentable+Defaults.swift"; sourceTree = "<group>"; };
+		24E3FF0E2C6C8D43005D2C3E /* PanModalPresentable+LayoutHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PanModalPresentable+LayoutHelpers.swift"; sourceTree = "<group>"; };
+		24E3FF0F2C6C8D43005D2C3E /* PanModalPresentable+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PanModalPresentable+UIViewController.swift"; sourceTree = "<group>"; };
+		24E3FF112C6C8D43005D2C3E /* TransitionPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresentable.swift; sourceTree = "<group>"; };
+		24E3FF122C6C8D43005D2C3E /* TransitionPresentable+Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransitionPresentable+Defaults.swift"; sourceTree = "<group>"; };
+		24E3FF142C6C8D43005D2C3E /* TransitionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresenter.swift; sourceTree = "<group>"; };
+		24E3FF152C6C8D43005D2C3E /* TransitionPresenter+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransitionPresenter+UIViewController.swift"; sourceTree = "<group>"; };
+		24E3FF172C6C8D43005D2C3E /* DimmedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmedView.swift; sourceTree = "<group>"; };
+		24E3FF182C6C8D43005D2C3E /* PanContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanContainerView.swift; sourceTree = "<group>"; };
+		24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +197,7 @@
 		24E3FEBB2C6B90E9005D2C3E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				24E3FF012C6C8CDB005D2C3E /* Helpers */,
 				24E3FEC12C6B917C005D2C3E /* Libraries */,
 				24E3FEC02C6B916E005D2C3E /* Alerts */,
 				24E3FEBE2C6B912D005D2C3E /* Base */,
@@ -215,8 +250,104 @@
 		24E3FEC12C6B917C005D2C3E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				24E3FF1A2C6C8D43005D2C3E /* Transition */,
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		24E3FF012C6C8CDB005D2C3E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		24E3FF042C6C8D43005D2C3E /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF022C6C8D43005D2C3E /* PanModalAnimator.swift */,
+				24E3FF032C6C8D43005D2C3E /* PanModalPresentationAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		24E3FF062C6C8D43005D2C3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF052C6C8D43005D2C3E /* PanModalPresentationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24E3FF082C6C8D43005D2C3E /* PanModal */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF072C6C8D43005D2C3E /* PanModalPresentationDelegate.swift */,
+			);
+			path = PanModal;
+			sourceTree = "<group>";
+		};
+		24E3FF0A2C6C8D43005D2C3E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF082C6C8D43005D2C3E /* PanModal */,
+				24E3FF092C6C8D43005D2C3E /* TransitionType.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		24E3FF102C6C8D43005D2C3E /* PanModal */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF0B2C6C8D43005D2C3E /* PanModalHeight.swift */,
+				24E3FF0C2C6C8D43005D2C3E /* PanModalPresentable.swift */,
+				24E3FF0D2C6C8D43005D2C3E /* PanModalPresentable+Defaults.swift */,
+				24E3FF0E2C6C8D43005D2C3E /* PanModalPresentable+LayoutHelpers.swift */,
+				24E3FF0F2C6C8D43005D2C3E /* PanModalPresentable+UIViewController.swift */,
+			);
+			path = PanModal;
+			sourceTree = "<group>";
+		};
+		24E3FF132C6C8D43005D2C3E /* Presentable */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF102C6C8D43005D2C3E /* PanModal */,
+				24E3FF112C6C8D43005D2C3E /* TransitionPresentable.swift */,
+				24E3FF122C6C8D43005D2C3E /* TransitionPresentable+Defaults.swift */,
+			);
+			path = Presentable;
+			sourceTree = "<group>";
+		};
+		24E3FF162C6C8D43005D2C3E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF142C6C8D43005D2C3E /* TransitionPresenter.swift */,
+				24E3FF152C6C8D43005D2C3E /* TransitionPresenter+UIViewController.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		24E3FF192C6C8D43005D2C3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF172C6C8D43005D2C3E /* DimmedView.swift */,
+				24E3FF182C6C8D43005D2C3E /* PanContainerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24E3FF1A2C6C8D43005D2C3E /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF042C6C8D43005D2C3E /* Animator */,
+				24E3FF062C6C8D43005D2C3E /* Controller */,
+				24E3FF0A2C6C8D43005D2C3E /* Delegate */,
+				24E3FF132C6C8D43005D2C3E /* Presentable */,
+				24E3FF162C6C8D43005D2C3E /* Presenter */,
+				24E3FF192C6C8D43005D2C3E /* View */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,8 +435,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E3FF1C2C6C8D43005D2C3E /* PanModalPresentationAnimator.swift in Sources */,
 				24E3FEFF2C6BBD44005D2C3E /* TestViewController.swift in Sources */,
+				24E3FF1B2C6C8D43005D2C3E /* PanModalAnimator.swift in Sources */,
 				24E3FEF82C6BB515005D2C3E /* Fillable.swift in Sources */,
+				24E3FF202C6C8D43005D2C3E /* PanModalHeight.swift in Sources */,
+				24E3FF1E2C6C8D43005D2C3E /* PanModalPresentationDelegate.swift in Sources */,
+				24E3FF272C6C8D43005D2C3E /* TransitionPresenter.swift in Sources */,
 				24E3FECC2C6B9AFD005D2C3E /* View.swift in Sources */,
 				24E3FEF22C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift in Sources */,
 				24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */,
@@ -313,10 +449,22 @@
 				24E3FEFA2C6BB688005D2C3E /* InteractiveView.swift in Sources */,
 				24E3FEF02C6BA60F005D2C3E /* FontConstant.swift in Sources */,
 				24E3FED62C6BA227005D2C3E /* UIFont+Ext.swift in Sources */,
+				24E3FF212C6C8D43005D2C3E /* PanModalPresentable.swift in Sources */,
+				24E3FF242C6C8D43005D2C3E /* PanModalPresentable+UIViewController.swift in Sources */,
+				24E3FF1D2C6C8D43005D2C3E /* PanModalPresentationController.swift in Sources */,
+				24E3FF2C2C6C9048005D2C3E /* KeyboardHelper.swift in Sources */,
+				24E3FF232C6C8D43005D2C3E /* PanModalPresentable+LayoutHelpers.swift in Sources */,
 				24E3FEF42C6BAE66005D2C3E /* With.swift in Sources */,
 				24E3FED42C6BA168005D2C3E /* Label.swift in Sources */,
+				24E3FF2A2C6C8D43005D2C3E /* PanContainerView.swift in Sources */,
+				24E3FF222C6C8D43005D2C3E /* PanModalPresentable+Defaults.swift in Sources */,
 				24E3FED02C6B9B3F005D2C3E /* UIView+Ext.swift in Sources */,
 				24E3FECE2C6B9B25005D2C3E /* String+Ext.swift in Sources */,
+				24E3FF252C6C8D43005D2C3E /* TransitionPresentable.swift in Sources */,
+				24E3FF292C6C8D43005D2C3E /* DimmedView.swift in Sources */,
+				24E3FF282C6C8D43005D2C3E /* TransitionPresenter+UIViewController.swift in Sources */,
+				24E3FF1F2C6C8D43005D2C3E /* TransitionType.swift in Sources */,
+				24E3FF262C6C8D43005D2C3E /* TransitionPresentable+Defaults.swift in Sources */,
 				24E3FECA2C6B9AE3005D2C3E /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

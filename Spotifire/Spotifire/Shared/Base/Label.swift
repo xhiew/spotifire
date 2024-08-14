@@ -13,9 +13,9 @@ class Label: UILabel {
         didSet {
             if setUnderline {
                 attributedText = NSMutableAttributedString(string: text ?? .empty).underline()
-            } else {
-                attributedText = NSMutableAttributedString(string: text ?? .empty).removeUnderline()
+                return
             }
+            attributedText = NSMutableAttributedString(string: text ?? .empty).removeUnderline()
         }
     }
     
