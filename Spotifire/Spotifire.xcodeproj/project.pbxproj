@@ -54,6 +54,7 @@
 		24E3FF292C6C8D43005D2C3E /* DimmedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF172C6C8D43005D2C3E /* DimmedView.swift */; };
 		24E3FF2A2C6C8D43005D2C3E /* PanContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF182C6C8D43005D2C3E /* PanContainerView.swift */; };
 		24E3FF2C2C6C9048005D2C3E /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */; };
+		24E3FF322C6CF513005D2C3E /* SmartScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF312C6CF513005D2C3E /* SmartScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		24E3FF172C6C8D43005D2C3E /* DimmedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmedView.swift; sourceTree = "<group>"; };
 		24E3FF182C6C8D43005D2C3E /* PanContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanContainerView.swift; sourceTree = "<group>"; };
 		24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		24E3FF312C6CF513005D2C3E /* SmartScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		24E3FEBB2C6B90E9005D2C3E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				24E3FF2E2C6C91E3005D2C3E /* CustomView */,
 				24E3FF012C6C8CDB005D2C3E /* Helpers */,
 				24E3FEC12C6B917C005D2C3E /* Libraries */,
 				24E3FEC02C6B916E005D2C3E /* Alerts */,
@@ -259,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */,
+				24E3FF312C6CF513005D2C3E /* SmartScrollView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -350,6 +354,13 @@
 			path = Transition;
 			sourceTree = "<group>";
 		};
+		24E3FF2E2C6C91E3005D2C3E /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -436,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E3FF1C2C6C8D43005D2C3E /* PanModalPresentationAnimator.swift in Sources */,
+				24E3FF322C6CF513005D2C3E /* SmartScrollView.swift in Sources */,
 				24E3FEFF2C6BBD44005D2C3E /* TestViewController.swift in Sources */,
 				24E3FF1B2C6C8D43005D2C3E /* PanModalAnimator.swift in Sources */,
 				24E3FEF82C6BB515005D2C3E /* Fillable.swift in Sources */,
