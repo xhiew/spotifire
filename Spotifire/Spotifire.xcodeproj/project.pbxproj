@@ -58,6 +58,8 @@
 		24E3FF372C6DA834005D2C3E /* SafeAreaBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF352C6DA833005D2C3E /* SafeAreaBottomView.swift */; };
 		24E3FF382C6DA834005D2C3E /* SafeAreaTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF362C6DA834005D2C3E /* SafeAreaTopView.swift */; };
 		24E3FF3F2C6DAF3B005D2C3E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF3E2C6DAF3B005D2C3E /* Button.swift */; };
+		24FB19D82C6E3FBF004BEA1D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FB19D72C6E3FBF004BEA1D /* Icons.xcassets */; };
+		24FB19DA2C6E3FD4004BEA1D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FB19D92C6E3FD4004BEA1D /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +116,8 @@
 		24E3FF352C6DA833005D2C3E /* SafeAreaBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaBottomView.swift; sourceTree = "<group>"; };
 		24E3FF362C6DA834005D2C3E /* SafeAreaTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaTopView.swift; sourceTree = "<group>"; };
 		24E3FF3E2C6DAF3B005D2C3E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		24FB19D72C6E3FBF004BEA1D /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		24FB19D92C6E3FD4004BEA1D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +171,10 @@
 		24E3FEB22C64CD5E005D2C3E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				24E3FEB72C64D04E005D2C3E /* Assets.xcassets */,
 				24E3FEB92C6B90CE005D2C3E /* Font */,
+				24E3FEB72C64D04E005D2C3E /* Assets.xcassets */,
+				24FB19D72C6E3FBF004BEA1D /* Icons.xcassets */,
+				24FB19D92C6E3FD4004BEA1D /* Colors.xcassets */,
 				24E3FED12C6BA138005D2C3E /* Localizable.xcstrings */,
 			);
 			path = Resources;
@@ -494,10 +500,12 @@
 				24E3FF002C6BBD44005D2C3E /* TestViewController.xib in Resources */,
 				24E3FEE72C6BA409005D2C3E /* NotoSans-SemiBold.ttf in Resources */,
 				24E3FEE62C6BA409005D2C3E /* NotoSans-MediumItalic.ttf in Resources */,
+				24FB19DA2C6E3FD4004BEA1D /* Colors.xcassets in Resources */,
 				24E3FEED2C6BA409005D2C3E /* NotoSans-Thin.ttf in Resources */,
 				24E3FEAA2C64CC27005D2C3E /* Base in Resources */,
 				24E3FEEB2C6BA409005D2C3E /* NotoSans-Light.ttf in Resources */,
 				24E3FED22C6BA138005D2C3E /* Localizable.xcstrings in Resources */,
+				24FB19D82C6E3FBF004BEA1D /* Icons.xcassets in Resources */,
 				24E3FEE32C6BA409005D2C3E /* NotoSans-Italic.ttf in Resources */,
 				24E3FEE42C6BA409005D2C3E /* NotoSans-LightItalic.ttf in Resources */,
 				24E3FEEE2C6BA409005D2C3E /* NotoSans-Medium.ttf in Resources */,

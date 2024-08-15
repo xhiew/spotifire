@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "search-unselected.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
