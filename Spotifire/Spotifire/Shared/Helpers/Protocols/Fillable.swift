@@ -10,5 +10,5 @@ import Foundation
 protocol Fillable {
     associatedtype View
     
-    func fill<U>(with objects: [U], onViewCreate: (_ index: Int, _ object: U) -> View)
+    func fill<Object>(with objects: [Object], onViewCreate: (_ index: Int, _ object: Object) -> View)
 }

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		240624792C6E574F00717B7C /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624782C6E574F00717B7C /* UIButton+Ext.swift */; };
+		2406247D2C6E639900717B7C /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406247C2C6E639900717B7C /* GridView.swift */; };
+		2406247F2C6E66E900717B7C /* FlexGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406247E2C6E66E900717B7C /* FlexGridView.swift */; };
+		240624812C6E67DC00717B7C /* DeviceConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624802C6E67DC00717B7C /* DeviceConstant.swift */; };
+		240624832C6E6A1400717B7C /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624822C6E6A1400717B7C /* UIApplication+Ext.swift */; };
 		24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */; };
 		24E3FEAA2C64CC27005D2C3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEA92C64CC27005D2C3E /* Base */; };
 		24E3FEB82C64D04E005D2C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEB72C64D04E005D2C3E /* Assets.xcassets */; };
@@ -65,6 +69,10 @@
 
 /* Begin PBXFileReference section */
 		240624782C6E574F00717B7C /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		2406247C2C6E639900717B7C /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		2406247E2C6E66E900717B7C /* FlexGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexGridView.swift; sourceTree = "<group>"; };
+		240624802C6E67DC00717B7C /* DeviceConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConstant.swift; sourceTree = "<group>"; };
+		240624822C6E6A1400717B7C /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
 		24E3FE9A2C64CC25005D2C3E /* Spotifire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E3FEA92C64CC27005D2C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -140,6 +148,22 @@
 				24E3FEF32C6BAE66005D2C3E /* With.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2406247A2C6E634400717B7C /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				2406247C2C6E639900717B7C /* GridView.swift */,
+				2406247E2C6E66E900717B7C /* FlexGridView.swift */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		2406247B2C6E635200717B7C /* HorizontalList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HorizontalList;
 			sourceTree = "<group>";
 		};
 		24E3FE912C64CC25005D2C3E = {
@@ -242,6 +266,7 @@
 				24E3FEF12C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift */,
 				24E3FEF52C6BB476005D2C3E /* Dequeueable+Ext.swift */,
 				240624782C6E574F00717B7C /* UIButton+Ext.swift */,
+				240624822C6E6A1400717B7C /* UIApplication+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				24E3FEEF2C6BA60F005D2C3E /* FontConstant.swift */,
+				240624802C6E67DC00717B7C /* DeviceConstant.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -380,6 +406,8 @@
 		24E3FF2E2C6C91E3005D2C3E /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				2406247B2C6E635200717B7C /* HorizontalList */,
+				2406247A2C6E634400717B7C /* GridView */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -533,6 +561,7 @@
 				24E3FF1E2C6C8D43005D2C3E /* PanModalPresentationDelegate.swift in Sources */,
 				24E3FF272C6C8D43005D2C3E /* TransitionPresenter.swift in Sources */,
 				24E3FECC2C6B9AFD005D2C3E /* View.swift in Sources */,
+				240624812C6E67DC00717B7C /* DeviceConstant.swift in Sources */,
 				24E3FEF22C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift in Sources */,
 				24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */,
 				24E3FEF62C6BB476005D2C3E /* Dequeueable+Ext.swift in Sources */,
@@ -545,6 +574,7 @@
 				24E3FF2C2C6C9048005D2C3E /* KeyboardHelper.swift in Sources */,
 				24E3FF232C6C8D43005D2C3E /* PanModalPresentable+LayoutHelpers.swift in Sources */,
 				24E3FEF42C6BAE66005D2C3E /* With.swift in Sources */,
+				2406247F2C6E66E900717B7C /* FlexGridView.swift in Sources */,
 				24E3FED42C6BA168005D2C3E /* Label.swift in Sources */,
 				24E3FF2A2C6C8D43005D2C3E /* PanContainerView.swift in Sources */,
 				24E3FF222C6C8D43005D2C3E /* PanModalPresentable+Defaults.swift in Sources */,
@@ -552,9 +582,11 @@
 				24E3FECE2C6B9B25005D2C3E /* String+Ext.swift in Sources */,
 				24E3FF252C6C8D43005D2C3E /* TransitionPresentable.swift in Sources */,
 				24E3FF292C6C8D43005D2C3E /* DimmedView.swift in Sources */,
+				240624832C6E6A1400717B7C /* UIApplication+Ext.swift in Sources */,
 				24E3FF372C6DA834005D2C3E /* SafeAreaBottomView.swift in Sources */,
 				24E3FF282C6C8D43005D2C3E /* TransitionPresenter+UIViewController.swift in Sources */,
 				24E3FF1F2C6C8D43005D2C3E /* TransitionType.swift in Sources */,
+				2406247D2C6E639900717B7C /* GridView.swift in Sources */,
 				240624792C6E574F00717B7C /* UIButton+Ext.swift in Sources */,
 				24E3FF262C6C8D43005D2C3E /* TransitionPresentable+Defaults.swift in Sources */,
 				24E3FECA2C6B9AE3005D2C3E /* ViewController.swift in Sources */,
