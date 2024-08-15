@@ -8,6 +8,19 @@
 import UIKit
 
 class Button: UIButton {
+    @IBInspectable
+    var setUnderline: Bool = false {
+        didSet {
+            if setUnderline {
+                let attributedTitle = NSMutableAttributedString(string: titleLabel?.text ?? .empty).underline()
+                setAttributedTitle(attributedTitle, for: .normal)
+                return
+            }
+            let attributedTitle = NSMutableAttributedString(string: titleLabel?.text ?? .empty).removeUnderline()
+            setAttributedTitle(attributedTitle, for: .normal)
+        }
+    }
+    
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
@@ -21,11 +34,15 @@ class Button: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setFont()
+        config()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        config()
+    }
+    
+    func config() {
         setFont()
     }
     

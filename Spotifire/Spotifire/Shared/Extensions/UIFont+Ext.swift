@@ -63,4 +63,33 @@ extension UIFont {
     }
 }
 
+extension UIFont {
+    enum FontSize {
+        case s11
+        case s12
+        case s13
+        case s14
+        case s15
+        case s16
+        case custom(size: CGFloat)
+        
+        public var rawValue: CGFloat {
+            switch self {
+            case .s11:  return 11
+            case .s12:  return 12
+            case .s13:  return 13
+            case .s14:  return 14
+            case .s15:  return 15
+            case .s16:  return 16
+            case .custom(let size): return size
+            }
+        }
+    }
+    
+    /// eg. fontName: FontConstant.regular
+    static func font(fontName: String, size: FontSize) -> UIFont {
+        return UIFont(name: fontName, size: size.rawValue) ?? .systemFont(ofSize: size.rawValue)
+    }
+}
+
 

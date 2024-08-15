@@ -13,6 +13,4 @@ extension String {
     static let one = "1"
     static let empty = ""
     static let space = " "
-    
-    
 }

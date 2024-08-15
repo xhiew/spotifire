@@ -36,4 +36,8 @@ extension UIView {
         addSubview(subView)
         subView.fixConstraintsInView(self)
     }
+    
+    func roundCorner(_ radius: CGFloat) {
+        layer.cornerRadius = radius
+    }
 }

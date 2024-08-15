@@ -107,7 +107,8 @@ extension PanModalPresentable where Self: UIViewController {
     }
 
     private var rootViewController: UIViewController? {
-        return UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.rootViewController
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return nil }
+        return windowScene.windows.filter { $0.isKeyWindow }.first?.rootViewController
     }
 
 }

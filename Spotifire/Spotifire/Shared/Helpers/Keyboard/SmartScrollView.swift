@@ -568,7 +568,7 @@ internal class TPKeyboardAvoidingState: NSObject {
 
 internal extension UIScrollView {
     fileprivate struct AssociatedKeysKeyboard {
-        static var DescriptiveName = "KeyBoard_DescriptiveName"
+        static var DescriptiveName = 0
     }
     
     var state: TPKeyboardAvoidingState? {
