@@ -55,6 +55,8 @@
 		24E3FF2A2C6C8D43005D2C3E /* PanContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF182C6C8D43005D2C3E /* PanContainerView.swift */; };
 		24E3FF2C2C6C9048005D2C3E /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */; };
 		24E3FF322C6CF513005D2C3E /* SmartScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF312C6CF513005D2C3E /* SmartScrollView.swift */; };
+		24E3FF372C6DA834005D2C3E /* SafeAreaBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF352C6DA833005D2C3E /* SafeAreaBottomView.swift */; };
+		24E3FF382C6DA834005D2C3E /* SafeAreaTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF362C6DA834005D2C3E /* SafeAreaTopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,8 @@
 		24E3FF182C6C8D43005D2C3E /* PanContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanContainerView.swift; sourceTree = "<group>"; };
 		24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
 		24E3FF312C6CF513005D2C3E /* SmartScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScrollView.swift; sourceTree = "<group>"; };
+		24E3FF352C6DA833005D2C3E /* SafeAreaBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaBottomView.swift; sourceTree = "<group>"; };
+		24E3FF362C6DA834005D2C3E /* SafeAreaTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaTopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,8 +265,8 @@
 		24E3FF012C6C8CDB005D2C3E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */,
-				24E3FF312C6CF513005D2C3E /* SmartScrollView.swift */,
+				24E3FF342C6DA808005D2C3E /* SafeArea */,
+				24E3FF332C6DA7EE005D2C3E /* Keyboard */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -361,6 +365,24 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		24E3FF332C6DA7EE005D2C3E /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF312C6CF513005D2C3E /* SmartScrollView.swift */,
+				24E3FF2B2C6C9048005D2C3E /* KeyboardHelper.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		24E3FF342C6DA808005D2C3E /* SafeArea */ = {
+			isa = PBXGroup;
+			children = (
+				24E3FF352C6DA833005D2C3E /* SafeAreaBottomView.swift */,
+				24E3FF362C6DA834005D2C3E /* SafeAreaTopView.swift */,
+			);
+			path = SafeArea;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -452,6 +474,7 @@
 				24E3FF1B2C6C8D43005D2C3E /* PanModalAnimator.swift in Sources */,
 				24E3FEF82C6BB515005D2C3E /* Fillable.swift in Sources */,
 				24E3FF202C6C8D43005D2C3E /* PanModalHeight.swift in Sources */,
+				24E3FF382C6DA834005D2C3E /* SafeAreaTopView.swift in Sources */,
 				24E3FF1E2C6C8D43005D2C3E /* PanModalPresentationDelegate.swift in Sources */,
 				24E3FF272C6C8D43005D2C3E /* TransitionPresenter.swift in Sources */,
 				24E3FECC2C6B9AFD005D2C3E /* View.swift in Sources */,
@@ -474,6 +497,7 @@
 				24E3FECE2C6B9B25005D2C3E /* String+Ext.swift in Sources */,
 				24E3FF252C6C8D43005D2C3E /* TransitionPresentable.swift in Sources */,
 				24E3FF292C6C8D43005D2C3E /* DimmedView.swift in Sources */,
+				24E3FF372C6DA834005D2C3E /* SafeAreaBottomView.swift in Sources */,
 				24E3FF282C6C8D43005D2C3E /* TransitionPresenter+UIViewController.swift in Sources */,
 				24E3FF1F2C6C8D43005D2C3E /* TransitionType.swift in Sources */,
 				24E3FF262C6C8D43005D2C3E /* TransitionPresentable+Defaults.swift in Sources */,
