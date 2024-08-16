@@ -7,14 +7,14 @@
 
 import UIKit
 
-class GridView<View>: UIStackView, Fillable where View: UIView {
+class GridView<CustomView>: UIStackView, Fillable where CustomView: View {
     // MARK: Properties
     var numberOfColumns: Int!
     
-    var items: [View] {
-        arrangedSubviews.flatMap { view -> [View] in
+    var items: [CustomView] {
+        arrangedSubviews.flatMap { view -> [CustomView] in
             guard let stackView = view as? UIStackView else { return [] }
-            return stackView.arrangedSubviews.filter { $0 is View } as! [View]
+            return stackView.arrangedSubviews.filter { $0 is CustomView } as! [CustomView]
         }
     }
     
@@ -54,7 +54,7 @@ class GridView<View>: UIStackView, Fillable where View: UIView {
     }
     
     // MARK: Configuration
-    func fill<Object>(with objects: [Object], onViewCreate: ((_ index: Int, _ object: Object) -> View)) {
+    func fill<Object>(with objects: [Object], onViewCreate: ((_ index: Int, _ object: Object) -> CustomView)) {
         clearGridView()
         
         for index in 0..<objects.count {

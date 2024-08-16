@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FlexGridView<View>: GridView<View> where View: UIView {
+final class FlexGridView<CustomView>: GridView<CustomView> where CustomView: View {
     private var remainingSpaceStackView: CGFloat = .zero
     
     // Tương ứng với WIDTH của FlexGridView
@@ -41,19 +41,19 @@ final class FlexGridView<View>: GridView<View> where View: UIView {
     var padding: CGFloat = 16
     //
     
-    override func fill<Object>(with objects: [Object], onViewCreate: ((Int, Object) -> View)) {
+    override func fill<Object>(with objects: [Object], onViewCreate: ((Int, Object) -> CustomView)) {
         clearGridView()
         for index in 0..<objects.count {
             let object = objects[index]
             let view = onViewCreate(index, object)
             
-            if arrangedSubviews.isEmpty {
-                addArrangedSubview(subStackView)
-            }
-            
             guard let object = object as? CustomStringConvertible else {
                 print("FLEXGRIDVIEW WARNING: Object must conform to CustomStringConvertible")
                 return
+            }
+            
+            if arrangedSubviews.isEmpty {
+                addArrangedSubview(subStackView)
             }
             
             let widthView = object.description.widthOfString(usingFont: .font(fontName: FontConstant.regular, size: .s14)) + leadingConstraintContant * 2

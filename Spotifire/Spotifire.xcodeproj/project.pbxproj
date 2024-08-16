@@ -12,6 +12,10 @@
 		2406247F2C6E66E900717B7C /* FlexGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406247E2C6E66E900717B7C /* FlexGridView.swift */; };
 		240624812C6E67DC00717B7C /* DeviceConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624802C6E67DC00717B7C /* DeviceConstant.swift */; };
 		240624832C6E6A1400717B7C /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624822C6E6A1400717B7C /* UIApplication+Ext.swift */; };
+		240624872C6EE98000717B7C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624862C6EE98000717B7C /* TableViewCell.swift */; };
+		240624892C6EE99F00717B7C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624882C6EE99F00717B7C /* CollectionViewCell.swift */; };
+		2406248B2C6EFB5000717B7C /* HorizontalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406248A2C6EFB5000717B7C /* HorizontalList.swift */; };
+		2406248D2C6EFF7B00717B7C /* HorizontalList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2406248C2C6EFF7B00717B7C /* HorizontalList.xib */; };
 		24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */; };
 		24E3FEAA2C64CC27005D2C3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEA92C64CC27005D2C3E /* Base */; };
 		24E3FEB82C64D04E005D2C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEB72C64D04E005D2C3E /* Assets.xcassets */; };
@@ -73,6 +77,10 @@
 		2406247E2C6E66E900717B7C /* FlexGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexGridView.swift; sourceTree = "<group>"; };
 		240624802C6E67DC00717B7C /* DeviceConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConstant.swift; sourceTree = "<group>"; };
 		240624822C6E6A1400717B7C /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		240624862C6EE98000717B7C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		240624882C6EE99F00717B7C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2406248A2C6EFB5000717B7C /* HorizontalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalList.swift; sourceTree = "<group>"; };
+		2406248C2C6EFF7B00717B7C /* HorizontalList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalList.xib; sourceTree = "<group>"; };
 		24E3FE9A2C64CC25005D2C3E /* Spotifire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E3FEA92C64CC27005D2C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -162,8 +170,26 @@
 		2406247B2C6E635200717B7C /* HorizontalList */ = {
 			isa = PBXGroup;
 			children = (
+				2406248A2C6EFB5000717B7C /* HorizontalList.swift */,
+				2406248C2C6EFF7B00717B7C /* HorizontalList.xib */,
 			);
 			path = HorizontalList;
+			sourceTree = "<group>";
+		};
+		240624842C6EE96100717B7C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				240624862C6EE98000717B7C /* TableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		240624852C6EE96B00717B7C /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				240624882C6EE99F00717B7C /* CollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		24E3FE912C64CC25005D2C3E = {
@@ -283,6 +309,8 @@
 		24E3FEBE2C6B912D005D2C3E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				240624852C6EE96B00717B7C /* CollectionViewCell */,
+				240624842C6EE96100717B7C /* TableViewCell */,
 				24E3FF3A2C6DAEAE005D2C3E /* View */,
 				24E3FF392C6DAEA2005D2C3E /* ViewController */,
 				24E3FF3D2C6DAF28005D2C3E /* Button */,
@@ -538,6 +566,7 @@
 				24E3FED22C6BA138005D2C3E /* Localizable.xcstrings in Resources */,
 				24FB19D82C6E3FBF004BEA1D /* Icons.xcassets in Resources */,
 				24E3FEE32C6BA409005D2C3E /* NotoSans-Italic.ttf in Resources */,
+				2406248D2C6EFF7B00717B7C /* HorizontalList.xib in Resources */,
 				24E3FEE42C6BA409005D2C3E /* NotoSans-LightItalic.ttf in Resources */,
 				24E3FEEE2C6BA409005D2C3E /* NotoSans-Medium.ttf in Resources */,
 			);
@@ -563,12 +592,14 @@
 				24E3FECC2C6B9AFD005D2C3E /* View.swift in Sources */,
 				240624812C6E67DC00717B7C /* DeviceConstant.swift in Sources */,
 				24E3FEF22C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift in Sources */,
+				240624872C6EE98000717B7C /* TableViewCell.swift in Sources */,
 				24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */,
 				24E3FEF62C6BB476005D2C3E /* Dequeueable+Ext.swift in Sources */,
 				24E3FEFA2C6BB688005D2C3E /* InteractiveView.swift in Sources */,
 				24E3FEF02C6BA60F005D2C3E /* FontConstant.swift in Sources */,
 				24E3FED62C6BA227005D2C3E /* UIFont+Ext.swift in Sources */,
 				24E3FF212C6C8D43005D2C3E /* PanModalPresentable.swift in Sources */,
+				2406248B2C6EFB5000717B7C /* HorizontalList.swift in Sources */,
 				24E3FF242C6C8D43005D2C3E /* PanModalPresentable+UIViewController.swift in Sources */,
 				24E3FF1D2C6C8D43005D2C3E /* PanModalPresentationController.swift in Sources */,
 				24E3FF2C2C6C9048005D2C3E /* KeyboardHelper.swift in Sources */,
@@ -587,6 +618,7 @@
 				24E3FF282C6C8D43005D2C3E /* TransitionPresenter+UIViewController.swift in Sources */,
 				24E3FF1F2C6C8D43005D2C3E /* TransitionType.swift in Sources */,
 				2406247D2C6E639900717B7C /* GridView.swift in Sources */,
+				240624892C6EE99F00717B7C /* CollectionViewCell.swift in Sources */,
 				240624792C6E574F00717B7C /* UIButton+Ext.swift in Sources */,
 				24E3FF262C6C8D43005D2C3E /* TransitionPresentable+Defaults.swift in Sources */,
 				24E3FECA2C6B9AE3005D2C3E /* ViewController.swift in Sources */,

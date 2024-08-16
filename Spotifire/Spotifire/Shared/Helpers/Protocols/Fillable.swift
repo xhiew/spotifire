@@ -8,7 +8,7 @@
 import Foundation
 
 protocol Fillable {
-    associatedtype View
+    associatedtype CustomView
     
-    func fill<Object>(with objects: [Object], onViewCreate: (_ index: Int, _ object: Object) -> View)
+    func fill<Object>(with objects: [Object], onViewCreate: (_ index: Int, _ object: Object) -> CustomView)
 }
