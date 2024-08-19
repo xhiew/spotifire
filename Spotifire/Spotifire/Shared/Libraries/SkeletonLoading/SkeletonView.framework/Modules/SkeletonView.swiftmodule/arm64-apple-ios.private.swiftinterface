@@ -1,0 +1,357 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SkeletonView
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum SkeletonAppearance {
+  public static var `default`: SkeletonView.SkeletonViewAppearance
+}
+@_hasMissingDesignatedInitializers public class SkeletonViewAppearance {
+  public var tintColor: UIKit.UIColor
+  public var gradient: SkeletonView.SkeletonGradient
+  public var multilineHeight: CoreFoundation.CGFloat
+  public var textLineHeight: SkeletonView.SkeletonTextLineHeight {
+    get
+    set
+  }
+  public var multilineSpacing: CoreFoundation.CGFloat
+  public var multilineLastLineFillPercent: Swift.Int
+  public var multilineCornerRadius: Swift.Int
+  public var renderSingleLineAsView: Swift.Bool
+  public var skeletonCornerRadius: Swift.Float
+  @objc deinit
+}
+extension UIKit.UITextView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var lastLineFillPercent: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var linesCornerRadius: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var skeletonLineSpacing: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func showSkeleton(usingColor color: UIKit.UIColor = SkeletonAppearance.default.tintColor, transition: SkeletonView.SkeletonTransitionStyle = .crossDissolve(0.25))
+  @_Concurrency.MainActor(unsafe) public func showSkeleton(usingColor color: UIKit.UIColor = SkeletonAppearance.default.tintColor, animated: Swift.Bool = true, delay: Foundation.TimeInterval, transition: SkeletonView.SkeletonTransitionStyle = .crossDissolve(0.25))
+  @_Concurrency.MainActor(unsafe) public func showGradientSkeleton(usingGradient gradient: SkeletonView.SkeletonGradient = SkeletonAppearance.default.gradient, transition: SkeletonView.SkeletonTransitionStyle = .crossDissolve(0.25))
+  @_Concurrency.MainActor(unsafe) public func showGradientSkeleton(usingGradient gradient: SkeletonView.SkeletonGradient = SkeletonAppearance.default.gradient, animated: Swift.Bool = true, delay: Foundation.TimeInterval, transition: SkeletonView.SkeletonTransitionStyle = .crossDissolve(0.25))
+  @_Concurrency.MainActor(unsafe) public func showAnimatedSkeleton(usingColor color: UIKit.UIColor = SkeletonAppearance.default.tintColor, animation: SkeletonView.SkeletonLayerAnimation? = nil, transition: SkeletonView.SkeletonTransitionStyle = .crossDissolve(0.25))
+  @_Concurrency.MainActor(unsafe) public func showAnimatedGradientSkeleton(usingGradient gradient: SkeletonView.SkeletonGradient = SkeletonAppearance.default.gradient, animation: SkeletonView.SkeletonLayerAnimation? = nil, transition: SkeletonView.SkeletonTransitionStyle = .crossDissolve(0.25))
+  @_Concurrency.MainActor(unsafe) public func updateSkeleton(usingColor color: UIKit.UIColor = SkeletonAppearance.default.tintColor)
+  @_Concurrency.MainActor(unsafe) public func updateGradientSkeleton(usingGradient gradient: SkeletonView.SkeletonGradient = SkeletonAppearance.default.gradient)
+  @_Concurrency.MainActor(unsafe) public func updateAnimatedSkeleton(usingColor color: UIKit.UIColor = SkeletonAppearance.default.tintColor, animation: SkeletonView.SkeletonLayerAnimation? = nil)
+  @_Concurrency.MainActor(unsafe) public func updateAnimatedGradientSkeleton(usingGradient gradient: SkeletonView.SkeletonGradient = SkeletonAppearance.default.gradient, animation: SkeletonView.SkeletonLayerAnimation? = nil)
+  @_Concurrency.MainActor(unsafe) public func layoutSkeletonIfNeeded()
+  @_Concurrency.MainActor(unsafe) public func hideSkeleton(reloadDataAfter reload: Swift.Bool = true, transition: SkeletonView.SkeletonTransitionStyle = .crossDissolve(0.25))
+  @_Concurrency.MainActor(unsafe) public func startSkeletonAnimation(_ anim: SkeletonView.SkeletonLayerAnimation? = nil)
+  @_Concurrency.MainActor(unsafe) public func stopSkeletonAnimation()
+}
+public struct SkeletonViewExtension<ExtendedType> {
+  public var type: ExtendedType {
+    get
+  }
+  public init(_ type: ExtendedType)
+}
+public protocol SkeletonViewExtended {
+  associatedtype ExtendedType
+  var sk: SkeletonView.SkeletonViewExtension<Self.ExtendedType> { get set }
+}
+extension SkeletonView.SkeletonViewExtended {
+  public var sk: SkeletonView.SkeletonViewExtension<Self> {
+    get
+    set
+  }
+}
+public protocol SkeletonCollectionViewDataSource : UIKit.UICollectionViewDataSource {
+  func numSections(in collectionSkeletonView: UIKit.UICollectionView) -> Swift.Int
+  func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, cellIdentifierForItemAt indexPath: Foundation.IndexPath) -> SkeletonView.ReusableCellIdentifier
+  func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, supplementaryViewIdentifierOfKind: Swift.String, at indexPath: Foundation.IndexPath) -> SkeletonView.ReusableCellIdentifier?
+  func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, skeletonCellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell?
+  func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, prepareCellForSkeleton cell: UIKit.UICollectionViewCell, at indexPath: Foundation.IndexPath)
+  func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, prepareViewForSkeleton view: UIKit.UICollectionReusableView, at indexPath: Foundation.IndexPath)
+}
+extension SkeletonView.SkeletonCollectionViewDataSource {
+  public func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  public func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, supplementaryViewIdentifierOfKind: Swift.String, at indexPath: Foundation.IndexPath) -> SkeletonView.ReusableCellIdentifier?
+  public func numSections(in collectionSkeletonView: UIKit.UICollectionView) -> Swift.Int
+  public func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, skeletonCellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell?
+  public func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, prepareCellForSkeleton cell: UIKit.UICollectionViewCell, at indexPath: Foundation.IndexPath)
+  public func collectionSkeletonView(_ skeletonView: UIKit.UICollectionView, prepareViewForSkeleton view: UIKit.UICollectionReusableView, at indexPath: Foundation.IndexPath)
+}
+public protocol SkeletonCollectionViewDelegate : UIKit.UICollectionViewDelegate {
+}
+public protocol SkeletonReusableCell {
+}
+extension UIKit.UITableViewCell : SkeletonView.SkeletonReusableCell {
+}
+extension UIKit.UICollectionViewCell : SkeletonView.SkeletonReusableCell {
+}
+public typealias ReusableCellIdentifier = Swift.String
+extension UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) public var skeletonPaddingInsets: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var skeletonTextLineHeight: SkeletonView.SkeletonTextLineHeight {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var skeletonTextNumberOfLines: SkeletonView.SkeletonTextNumberOfLines {
+    get
+    set
+  }
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) public static let automaticNumberOfSkeletonRows: Swift.Int
+}
+public typealias ReusableHeaderFooterIdentifier = Swift.String
+public protocol SkeletonTableViewDataSource : UIKit.UITableViewDataSource {
+  func numSections(in collectionSkeletonView: UIKit.UITableView) -> Swift.Int
+  func collectionSkeletonView(_ skeletonView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  func collectionSkeletonView(_ skeletonView: UIKit.UITableView, cellIdentifierForRowAt indexPath: Foundation.IndexPath) -> SkeletonView.ReusableCellIdentifier
+  func collectionSkeletonView(_ skeletonView: UIKit.UITableView, skeletonCellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell?
+  func collectionSkeletonView(_ skeletonView: UIKit.UITableView, prepareCellForSkeleton cell: UIKit.UITableViewCell, at indexPath: Foundation.IndexPath)
+}
+extension SkeletonView.SkeletonTableViewDataSource {
+  public func collectionSkeletonView(_ skeletonView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  public func numSections(in collectionSkeletonView: UIKit.UITableView) -> Swift.Int
+  @available(*, deprecated, renamed: "collectionSkeletonView(_:cellIdentifierForRowAt:)")
+  public func collectionSkeletonView(_ skeletonView: UIKit.UITableView, cellIdenfierForRowAt indexPath: Foundation.IndexPath) -> SkeletonView.ReusableCellIdentifier
+  public func collectionSkeletonView(_ skeletonView: UIKit.UITableView, skeletonCellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell?
+  public func collectionSkeletonView(_ skeletonView: UIKit.UITableView, prepareCellForSkeleton cell: UIKit.UITableViewCell, at indexPath: Foundation.IndexPath)
+}
+public protocol SkeletonTableViewDelegate : UIKit.UITableViewDelegate {
+  func collectionSkeletonView(_ skeletonView: UIKit.UITableView, identifierForHeaderInSection section: Swift.Int) -> SkeletonView.ReusableHeaderFooterIdentifier?
+  func collectionSkeletonView(_ skeletonView: UIKit.UITableView, identifierForFooterInSection section: Swift.Int) -> SkeletonView.ReusableHeaderFooterIdentifier?
+}
+extension SkeletonView.SkeletonTableViewDelegate {
+  public func collectionSkeletonView(_ skeletonView: UIKit.UITableView, identifierForHeaderInSection section: Swift.Int) -> SkeletonView.ReusableHeaderFooterIdentifier?
+  public func collectionSkeletonView(_ skeletonView: UIKit.UITableView, identifierForFooterInSection section: Swift.Int) -> SkeletonView.ReusableHeaderFooterIdentifier?
+}
+extension UIKit.UIColor {
+  public static var greenSea: UIKit.UIColor
+  public static var turquoise: UIKit.UIColor
+  public static var emerald: UIKit.UIColor
+  public static var peterRiver: UIKit.UIColor
+  public static var amethyst: UIKit.UIColor
+  public static var wetAsphalt: UIKit.UIColor
+  public static var nephritis: UIKit.UIColor
+  public static var belizeHole: UIKit.UIColor
+  public static var wisteria: UIKit.UIColor
+  public static var midnightBlue: UIKit.UIColor
+  public static var sunFlower: UIKit.UIColor
+  public static var carrot: UIKit.UIColor
+  public static var alizarin: UIKit.UIColor
+  public static var clouds: UIKit.UIColor
+  public static var darkClouds: UIKit.UIColor
+  public static var concrete: UIKit.UIColor
+  public static var flatOrange: UIKit.UIColor
+  public static var pumpkin: UIKit.UIColor
+  public static var pomegranate: UIKit.UIColor
+  public static var silver: UIKit.UIColor
+  public static var asbestos: UIKit.UIColor
+  public static var skeletonDefault: UIKit.UIColor {
+    get
+  }
+  public var complementaryColor: UIKit.UIColor {
+    get
+  }
+  public var lighter: UIKit.UIColor {
+    get
+  }
+  public var darker: UIKit.UIColor {
+    get
+  }
+}
+extension Foundation.NSNotification.Name {
+  public static let skeletonWillAppearNotification: Foundation.Notification.Name
+  public static let skeletonDidAppearNotification: Foundation.Notification.Name
+  public static let skeletonWillUpdateNotification: Foundation.Notification.Name
+  public static let skeletonDidUpdateNotification: Foundation.Notification.Name
+  public static let skeletonWillDisappearNotification: Foundation.Notification.Name
+  public static let skeletonDidDisappearNotification: Foundation.Notification.Name
+}
+extension UIKit.UIView : SkeletonView.SkeletonViewExtended {
+  public typealias ExtendedType = UIKit.UIView
+}
+public struct SkeletonTreeNode<Base> {
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public var skeletonPaddingInsets: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var skeletonTextLineHeight: SkeletonView.SkeletonTextLineHeight {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var skeletonTextNumberOfLines: SkeletonView.SkeletonTextNumberOfLines {
+    get
+    set
+  }
+}
+public enum SkeletonTextLineHeight : Swift.Equatable {
+  case relativeToFont
+  case relativeToConstraints
+  case fixed(CoreFoundation.CGFloat)
+  public static func == (a: SkeletonView.SkeletonTextLineHeight, b: SkeletonView.SkeletonTextLineHeight) -> Swift.Bool
+}
+public typealias SkeletonLayerAnimation = (QuartzCore.CALayer) -> QuartzCore.CAAnimation
+public class SkeletonAnimationBuilder {
+  public init()
+  public func makeSlidingAnimation(withDirection direction: SkeletonView.GradientDirection, duration: CoreFoundation.CFTimeInterval = 1.5, autoreverses: Swift.Bool = false) -> SkeletonView.SkeletonLayerAnimation
+  @objc deinit
+}
+public struct SkeletonGradient {
+  public var colors: [UIKit.UIColor] {
+    get
+  }
+  public init(baseColor: UIKit.UIColor, secondaryColor: UIKit.UIColor? = nil)
+  public init(colors: [UIKit.UIColor])
+}
+public enum SkeletonType {
+  case solid
+  case gradient
+  public static func == (a: SkeletonView.SkeletonType, b: SkeletonView.SkeletonType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SkeletonTextNumberOfLines : Swift.Equatable, Swift.ExpressibleByIntegerLiteral {
+  case inherited
+  case custom(Swift.Int)
+  public static func == (a: SkeletonView.SkeletonTextNumberOfLines, b: SkeletonView.SkeletonTextNumberOfLines) -> Swift.Bool
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension SkeletonView.SkeletonTextNumberOfLines {
+  public init(integerLiteral value: Swift.Int)
+}
+extension SkeletonView.SkeletonViewExtension where ExtendedType : UIKit.UIView {
+  public var skeletonTreeDescription: Swift.String {
+    get
+  }
+  public var isSkeletonActive: Swift.Bool {
+    get
+  }
+}
+extension Foundation.NSNotification.Name {
+  @available(*, deprecated, renamed: "skeletonWillAppear")
+  public static let willBeginShowingSkeletons: Foundation.Notification.Name
+  @available(*, deprecated, renamed: "skeletonDidAppear")
+  public static let didShowSkeletons: Foundation.Notification.Name
+  @available(*, deprecated, renamed: "skeletonWillUpdate")
+  public static let willBeginUpdatingSkeletons: Foundation.Notification.Name
+  @available(*, deprecated, renamed: "skeletonDidUpdate")
+  public static let didUpdateSkeletons: Foundation.Notification.Name
+  @available(*, deprecated, renamed: "skeletonWillDisappear")
+  public static let willBeginHidingSkeletons: Foundation.Notification.Name
+  @available(*, deprecated, renamed: "skeletonDidDisappear")
+  public static let didHideSkeletons: Foundation.Notification.Name
+}
+extension UIKit.UIView {
+  @available(*, deprecated, renamed: "sk.treeNodesDescription")
+  @_Concurrency.MainActor(unsafe) public var skeletonDescription: Swift.String {
+    get
+  }
+  @available(*, deprecated, renamed: "sk.isSkeletonActive")
+  @_Concurrency.MainActor(unsafe) public var isSkeletonActive: Swift.Bool {
+    get
+  }
+}
+extension UIKit.UILabel {
+  @objc @available(*, deprecated, renamed: "skeletonTextLineHeight")
+  @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var useFontLineHeight: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension UIKit.UITextView {
+  @objc @available(*, deprecated, renamed: "skeletonTextLineHeight")
+  @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var useFontLineHeight: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension SkeletonView.SkeletonViewAppearance {
+  @available(*, deprecated, renamed: "textLineHeight")
+  public var useFontLineHeight: Swift.Bool {
+    get
+    set
+  }
+}
+public enum GradientDirection {
+  case leftRight
+  case rightLeft
+  case topBottom
+  case bottomTop
+  case topLeftBottomRight
+  case bottomRightTopLeft
+  public func slidingAnimation(duration: CoreFoundation.CFTimeInterval = 1.5, autoreverses: Swift.Bool = false) -> SkeletonView.SkeletonLayerAnimation
+  public static func == (a: SkeletonView.GradientDirection, b: SkeletonView.GradientDirection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SkeletonTransitionStyle : Swift.Equatable {
+  case none
+  case crossDissolve(Foundation.TimeInterval)
+  public static func == (a: SkeletonView.SkeletonTransitionStyle, b: SkeletonView.SkeletonTransitionStyle) -> Swift.Bool
+}
+extension UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var isSkeletonable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var isHiddenWhenSkeletonIsActive: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var isUserInteractionDisabledWhenSkeletonIsActive: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var skeletonCornerRadius: Swift.Float {
+    @objc get
+    @objc set
+  }
+}
+extension UIKit.UILabel {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var lastLineFillPercent: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var linesCornerRadius: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var skeletonLineSpacing: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+}
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) public static let automaticNumberOfSkeletonItems: Swift.Int
+  @_Concurrency.MainActor(unsafe) public func prepareSkeleton(completion: @escaping (Swift.Bool) -> Swift.Void)
+}
+extension QuartzCore.CALayer {
+  public var pulse: QuartzCore.CAAnimation {
+    get
+  }
+}
+extension SkeletonView.GradientDirection : Swift.Equatable {}
+extension SkeletonView.GradientDirection : Swift.Hashable {}
+extension SkeletonView.SkeletonType : Swift.Equatable {}
+extension SkeletonView.SkeletonType : Swift.Hashable {}

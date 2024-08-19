@@ -20,18 +20,6 @@ extension NSMutableAttributedString {
         return self
     }
     
-    func changeFont(font: UIFont) -> Self {
-        let range = (self.string as NSString).range(of: self.string)
-        self.addAttribute(NSAttributedString.Key.font, value: font, range: range)
-        return self
-    }
-    
-    func changeTextColor(color: UIColor) -> Self {
-        let range = (self.string as NSString).range(of: self.string)
-        self.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
-        return self
-    }
-    
     func changeLineSpacing(lineSpacing: CGFloat) -> Self {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpacing

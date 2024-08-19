@@ -35,7 +35,7 @@ public class SmartTableView: UITableView, UITextFieldDelegate, UITextViewDelegat
     }
     
     var hasAutomaticKeyboardAvoidingBehaviour: Bool {
-        if #available(iOS 8.3, *), self.delegate is UITableViewController {
+        if self.delegate is UITableViewController {
             return true
         }
         return false
