@@ -21,6 +21,9 @@
 		240624A22C73214A00717B7C /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624A12C73214A00717B7C /* CollectionView.swift */; };
 		240624A42C73216200717B7C /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624A32C73216200717B7C /* TableView.swift */; };
 		240624A72C7326AD00717B7C /* SkeletonView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240624A52C7326AD00717B7C /* SkeletonView.framework */; };
+		2483BDDC2C81AF680052CE7C /* StickyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDDB2C81AF680052CE7C /* StickyTabBarController.swift */; };
+		2483BDDE2C81B5AB0052CE7C /* ExpandableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDDD2C81B5AB0052CE7C /* ExpandableViewController.swift */; };
+		2483BDE02C81BE650052CE7C /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDDF2C81BE650052CE7C /* CGFloat+Ext.swift */; };
 		24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */; };
 		24E3FEAA2C64CC27005D2C3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEA92C64CC27005D2C3E /* Base */; };
 		24E3FEB82C64D04E005D2C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEB72C64D04E005D2C3E /* Assets.xcassets */; };
@@ -91,6 +94,9 @@
 		240624A12C73214A00717B7C /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		240624A32C73216200717B7C /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		240624A52C7326AD00717B7C /* SkeletonView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkeletonView.framework; sourceTree = "<group>"; };
+		2483BDDB2C81AF680052CE7C /* StickyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyTabBarController.swift; sourceTree = "<group>"; };
+		2483BDDD2C81B5AB0052CE7C /* ExpandableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableViewController.swift; sourceTree = "<group>"; };
+		2483BDDF2C81BE650052CE7C /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
 		24E3FE9A2C64CC25005D2C3E /* Spotifire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E3FEA92C64CC27005D2C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -206,6 +212,7 @@
 		240624982C71C87300717B7C /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				2483BDDA2C81AF0E0052CE7C /* Sticky */,
 				240624992C71C88500717B7C /* TabBarController.swift */,
 			);
 			path = TabBarController;
@@ -241,6 +248,15 @@
 				240624A52C7326AD00717B7C /* SkeletonView.framework */,
 			);
 			path = SkeletonLoading;
+			sourceTree = "<group>";
+		};
+		2483BDDA2C81AF0E0052CE7C /* Sticky */ = {
+			isa = PBXGroup;
+			children = (
+				2483BDDD2C81B5AB0052CE7C /* ExpandableViewController.swift */,
+				2483BDDB2C81AF680052CE7C /* StickyTabBarController.swift */,
+			);
+			path = Sticky;
 			sourceTree = "<group>";
 		};
 		24E3FE912C64CC25005D2C3E = {
@@ -344,6 +360,7 @@
 				24E3FEF52C6BB476005D2C3E /* Dequeueable+Ext.swift */,
 				240624782C6E574F00717B7C /* UIButton+Ext.swift */,
 				240624822C6E6A1400717B7C /* UIApplication+Ext.swift */,
+				2483BDDF2C81BE650052CE7C /* CGFloat+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -641,6 +658,7 @@
 				24E3FEFF2C6BBD44005D2C3E /* TestViewController.swift in Sources */,
 				240624A22C73214A00717B7C /* CollectionView.swift in Sources */,
 				24E3FF1B2C6C8D43005D2C3E /* PanModalAnimator.swift in Sources */,
+				2483BDDE2C81B5AB0052CE7C /* ExpandableViewController.swift in Sources */,
 				24E3FEF82C6BB515005D2C3E /* Fillable.swift in Sources */,
 				24E3FF202C6C8D43005D2C3E /* PanModalHeight.swift in Sources */,
 				240624A42C73216200717B7C /* TableView.swift in Sources */,
@@ -649,8 +667,10 @@
 				24E3FF272C6C8D43005D2C3E /* TransitionPresenter.swift in Sources */,
 				24E3FECC2C6B9AFD005D2C3E /* View.swift in Sources */,
 				240624812C6E67DC00717B7C /* DeviceConstant.swift in Sources */,
+				2483BDDC2C81AF680052CE7C /* StickyTabBarController.swift in Sources */,
 				24E3FEF22C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift in Sources */,
 				2406249A2C71C88500717B7C /* TabBarController.swift in Sources */,
+				2483BDE02C81BE650052CE7C /* CGFloat+Ext.swift in Sources */,
 				240624872C6EE98000717B7C /* TableViewCell.swift in Sources */,
 				24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */,
 				24E3FEF62C6BB476005D2C3E /* Dequeueable+Ext.swift in Sources */,

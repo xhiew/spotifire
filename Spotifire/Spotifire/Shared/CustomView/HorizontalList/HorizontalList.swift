@@ -10,13 +10,17 @@ import UIKit
 class HorizontalList<CustomView>: View, Fillable where CustomView: View {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var centerConstraint: NSLayoutConstraint!
-    @IBOutlet weak var scrollView: SmartScrollView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override class var nibName: String? { return "HorizontalList" }
     
     var isAllowCenterContraint: Bool = true {
         didSet {
+            if centerConstraint == nil { return }
             centerConstraint.isActive = isAllowCenterContraint
+            if !isAllowCenterContraint {
+                scrollView.contentInset = contentInset
+            }
         }
     }
     
@@ -33,6 +37,7 @@ class HorizontalList<CustomView>: View, Fillable where CustomView: View {
     }
     
     override func configView() {
+        super.configView()
         stackView.spacing = itemSpacing
     }
     
@@ -43,7 +48,10 @@ class HorizontalList<CustomView>: View, Fillable where CustomView: View {
             stackView.addArrangedSubview(view)
         }
         stackView.layoutIfNeeded()
-        scrollView.contentInset = stackView.frame.width >= DeviceConstant.screenWidth ? contentInset : .zero
+        
+        if isAllowCenterContraint {
+            scrollView.contentInset = stackView.frame.width >= DeviceConstant.screenWidth ? contentInset : .zero
+        }
     }
     
     private func clearAllItems() {
