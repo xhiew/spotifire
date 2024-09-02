@@ -48,7 +48,7 @@ final class FlexGridView<CustomView>: GridView<CustomView> where CustomView: Vie
             let view = onViewCreate(index, object)
             
             guard let object = object as? CustomStringConvertible else {
-                print("FLEXGRIDVIEW WARNING: Object must conform to CustomStringConvertible")
+                print("⚠️ FLEXGRIDVIEW WARNING: Object MUST conform to CustomStringConvertible")
                 return
             }
             
@@ -73,7 +73,7 @@ final class FlexGridView<CustomView>: GridView<CustomView> where CustomView: Vie
             
             remainingSpaceStackView -= widthView + spacing
             
-            if remainingSpaceStackView < 0 {
+            if remainingSpaceStackView < .zero {
                 addEmptyView(with: remainingSpaceStackView + widthView + spacing)
                 addArrangedSubview(subStackView)
                 remainingSpaceStackView = maxSpaceStackView - widthView - spacing
@@ -81,7 +81,7 @@ final class FlexGridView<CustomView>: GridView<CustomView> where CustomView: Vie
             
             lastSubStackView?.addArrangedSubview(view)
             
-            if index == objects.count - 1, remainingSpaceStackView > 0 {
+            if index == objects.count - 1, remainingSpaceStackView > .zero {
                 addEmptyView(with: remainingSpaceStackView)
             }
         }

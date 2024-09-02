@@ -12,7 +12,7 @@ class HorizontalList<CustomView>: View, Fillable where CustomView: View {
     @IBOutlet weak var centerConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    override class var nibName: String? { return "HorizontalList" }
+    override class var nibName: String? { return HorizontalList.aka }
     
     var isAllowCenterContraint: Bool = true {
         didSet {
