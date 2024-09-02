@@ -7,6 +7,6 @@
 
 import UIKit
 
-protocol StickySupporting where Self: TabBarController {
+protocol StickySupporting where Self: UITabBarController {
     
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: - Expandable
-protocol Expandable where Self: ViewController {
+protocol Expandable where Self: UIViewController {
     var minimisedView: View { get }
     var container: StickySupporting? { get set }
 }
@@ -73,22 +73,52 @@ class ExpandableViewController: ViewController {
 
 // MARK: Helper Methods
 extension ExpandableViewController {
-    @objc
-    private func enlargeWithTap(recognizer: UITapGestureRecognizer) {
-        
-    }
-    
-    @objc
-    private func handlePan(recognizer: UIPanGestureRecognizer) {
-        
-    }
-    
     private func configChildViewController() {
         addChild(childViewController)
         view.addSubview(childViewController.view)
         childViewController.view.frame = view.bounds
         childViewController.didMove(toParent: self)
     }
+    
+    @objc
+    private func enlargeWithTap(recognizer: UITapGestureRecognizer) {
+        switch recognizer.state {
+        case .ended: animateTransitionIfNeeded(isEnlarging: !isEnlarged, duration: animationDuration)
+        default: break
+        }
+    }
+    
+    @objc
+    private func handlePan(recognizer: UIPanGestureRecognizer) {
+        switch recognizer.state {
+        case .began:
+            let velocity = recognizer.velocity(in: childViewController.view)
+            isBeginningUpwards = isDirectionUpwards(for: velocity)
+            startInteractiveTransition(isEnlarging: !isEnlarged, duration: animationDuration)
+        case .changed:
+            let velocity = recognizer.velocity(in: childViewController.view)
+            isBeginningUpwards = isDirectionUpwards(for: velocity)
+            let translation = recognizer.translation(in: childViewController.view)
+            var fractionComplete = translation.y / DeviceConstant.screenHeight
+            fractionComplete = isEnlarged ? fractionComplete : -fractionComplete
+            if runningAnimation?.isReversed ?? false {
+                fractionComplete = -fractionComplete
+            }
+            updateInteractiveTransition(fractionCompleted: fractionComplete)
+        case .ended:
+            continueInteractiveTransition(isReversed: shouldReverseAnimation())
+        default:
+            break
+        }
+    }
+    
+    private func shouldReverseAnimation() -> Bool {
+        if isEnlarged && !isBeginningUpwards { return true }
+        else if !isEnlarged && isBeginningUpwards { return true }
+        return false
+    }
+    
+    private func isDirectionUpwards(for velocity: CGPoint) -> Bool { velocity.y > .zero }
     
     private func animateTransitionIfNeeded(isEnlarging: Bool, duration: TimeInterval) {
         guard let customTabBarController,
@@ -97,7 +127,7 @@ extension ExpandableViewController {
         
         runningAnimation = UIViewPropertyAnimator(
             duration: duration,
-            dampingRatio: 1) {
+            dampingRatio: .one) {
                 if isEnlarging {
                     self.heightConstraint.constant = DeviceConstant.screenHeight - customTabBarController.tabBar.frame.height
                     self.minimisedView.alpha = .zero
@@ -121,5 +151,20 @@ extension ExpandableViewController {
         }
         
         runningAnimation?.startAnimation()
+    }
+    
+    private func startInteractiveTransition(isEnlarging: Bool, duration: TimeInterval) {
+        animateTransitionIfNeeded(isEnlarging: isEnlarging, duration: duration)
+        runningAnimation?.pauseAnimation()
+        animationProgressWhenInterrupted = runningAnimation?.fractionComplete ?? .zero
+    }
+    
+    private func updateInteractiveTransition(fractionCompleted: CGFloat) {
+        runningAnimation?.fractionComplete = fractionCompleted + animationProgressWhenInterrupted
+    }
+    
+    private func continueInteractiveTransition(isReversed: Bool) {
+        runningAnimation?.isReversed = isReversed
+        runningAnimation?.continueAnimation(withTimingParameters: nil, durationFactor: .zero)
     }
 }

@@ -24,6 +24,9 @@
 		2483BDDC2C81AF680052CE7C /* StickyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDDB2C81AF680052CE7C /* StickyTabBarController.swift */; };
 		2483BDDE2C81B5AB0052CE7C /* ExpandableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDDD2C81B5AB0052CE7C /* ExpandableViewController.swift */; };
 		2483BDE02C81BE650052CE7C /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDDF2C81BE650052CE7C /* CGFloat+Ext.swift */; };
+		2483BDE22C82BFD30052CE7C /* AnimationConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDE12C82BFD30052CE7C /* AnimationConstant.swift */; };
+		2483BDE52C8581970052CE7C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDE42C8581970052CE7C /* SwiftyJSON.swift */; };
+		2483BDE72C8585250052CE7C /* AKA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDE62C8585250052CE7C /* AKA.swift */; };
 		24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */; };
 		24E3FEAA2C64CC27005D2C3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEA92C64CC27005D2C3E /* Base */; };
 		24E3FEB82C64D04E005D2C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEB72C64D04E005D2C3E /* Assets.xcassets */; };
@@ -97,6 +100,9 @@
 		2483BDDB2C81AF680052CE7C /* StickyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyTabBarController.swift; sourceTree = "<group>"; };
 		2483BDDD2C81B5AB0052CE7C /* ExpandableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableViewController.swift; sourceTree = "<group>"; };
 		2483BDDF2C81BE650052CE7C /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
+		2483BDE12C82BFD30052CE7C /* AnimationConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationConstant.swift; sourceTree = "<group>"; };
+		2483BDE42C8581970052CE7C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		2483BDE62C8585250052CE7C /* AKA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKA.swift; sourceTree = "<group>"; };
 		24E3FE9A2C64CC25005D2C3E /* Spotifire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E3FEA92C64CC27005D2C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 			children = (
 				24E3FEF72C6BB515005D2C3E /* Fillable.swift */,
 				24E3FEF32C6BAE66005D2C3E /* With.swift */,
+				2483BDE62C8585250052CE7C /* AKA.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -257,6 +264,14 @@
 				2483BDDB2C81AF680052CE7C /* StickyTabBarController.swift */,
 			);
 			path = Sticky;
+			sourceTree = "<group>";
+		};
+		2483BDE32C8581880052CE7C /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				2483BDE42C8581970052CE7C /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		24E3FE912C64CC25005D2C3E = {
@@ -370,6 +385,7 @@
 			children = (
 				24E3FEEF2C6BA60F005D2C3E /* FontConstant.swift */,
 				240624802C6E67DC00717B7C /* DeviceConstant.swift */,
+				2483BDE12C82BFD30052CE7C /* AnimationConstant.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -401,6 +417,7 @@
 		24E3FEC12C6B917C005D2C3E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				2483BDE32C8581880052CE7C /* SwiftyJSON */,
 				240624A62C7326AD00717B7C /* SkeletonLoading */,
 				24E3FF1A2C6C8D43005D2C3E /* Transition */,
 			);
@@ -663,6 +680,7 @@
 				24E3FF202C6C8D43005D2C3E /* PanModalHeight.swift in Sources */,
 				240624A42C73216200717B7C /* TableView.swift in Sources */,
 				24E3FF382C6DA834005D2C3E /* SafeAreaTopView.swift in Sources */,
+				2483BDE52C8581970052CE7C /* SwiftyJSON.swift in Sources */,
 				24E3FF1E2C6C8D43005D2C3E /* PanModalPresentationDelegate.swift in Sources */,
 				24E3FF272C6C8D43005D2C3E /* TransitionPresenter.swift in Sources */,
 				24E3FECC2C6B9AFD005D2C3E /* View.swift in Sources */,
@@ -701,7 +719,9 @@
 				240624892C6EE99F00717B7C /* CollectionViewCell.swift in Sources */,
 				240624792C6E574F00717B7C /* UIButton+Ext.swift in Sources */,
 				24E3FF262C6C8D43005D2C3E /* TransitionPresentable+Defaults.swift in Sources */,
+				2483BDE72C8585250052CE7C /* AKA.swift in Sources */,
 				24E3FECA2C6B9AE3005D2C3E /* ViewController.swift in Sources */,
+				2483BDE22C82BFD30052CE7C /* AnimationConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
