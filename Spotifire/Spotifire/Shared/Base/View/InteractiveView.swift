@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InteractiveView: View {
+final class InteractiveView: View {
     private let isEnabledAllowsUserInteractionWhileHighlightingCard = true
     private let cardHighlightedFactor: CGFloat = 0.96
     

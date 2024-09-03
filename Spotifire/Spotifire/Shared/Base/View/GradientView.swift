@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class GradientView: UIView {
+class GradientView: UIView {
     override class var layerClass: AnyClass { return CAGradientLayer.self }
     
     @IBInspectable
