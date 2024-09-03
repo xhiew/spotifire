@@ -2,7 +2,7 @@
 //  PlaybackScrubber.swift
 //  Spotifire
 //
-//  Created by xhiew on 3/9/24.
+//  Created by xhieu on 3/9/24.
 //
 
 import UIKit
