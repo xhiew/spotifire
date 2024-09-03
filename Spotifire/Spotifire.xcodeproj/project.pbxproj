@@ -28,6 +28,7 @@
 		2483BDE52C8581970052CE7C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDE42C8581970052CE7C /* SwiftyJSON.swift */; };
 		2483BDE72C8585250052CE7C /* AKA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDE62C8585250052CE7C /* AKA.swift */; };
 		2483BDEA2C85AE610052CE7C /* BouncyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDE92C85AE610052CE7C /* BouncyLayout.swift */; };
+		2483BDFE2C85D35D0052CE7C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BDFD2C85D35D0052CE7C /* GradientView.swift */; };
 		24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */; };
 		24E3FEAA2C64CC27005D2C3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEA92C64CC27005D2C3E /* Base */; };
 		24E3FEB82C64D04E005D2C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEB72C64D04E005D2C3E /* Assets.xcassets */; };
@@ -105,6 +106,7 @@
 		2483BDE42C8581970052CE7C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		2483BDE62C8585250052CE7C /* AKA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKA.swift; sourceTree = "<group>"; };
 		2483BDE92C85AE610052CE7C /* BouncyLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncyLayout.swift; sourceTree = "<group>"; };
+		2483BDFD2C85D35D0052CE7C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		24E3FE9A2C64CC25005D2C3E /* Spotifire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E3FEA92C64CC27005D2C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -283,6 +285,14 @@
 				2483BDE92C85AE610052CE7C /* BouncyLayout.swift */,
 			);
 			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		2483BDFC2C85D3450052CE7C /* GradientView */ = {
+			isa = PBXGroup;
+			children = (
+				2483BDFD2C85D35D0052CE7C /* GradientView.swift */,
+			);
+			path = GradientView;
 			sourceTree = "<group>";
 		};
 		24E3FE912C64CC25005D2C3E = {
@@ -535,6 +545,7 @@
 		24E3FF2E2C6C91E3005D2C3E /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				2483BDFC2C85D3450052CE7C /* GradientView */,
 				2406247B2C6E635200717B7C /* HorizontalList */,
 				2406247A2C6E634400717B7C /* GridView */,
 			);
@@ -682,6 +693,7 @@
 			files = (
 				24E3FF3F2C6DAF3B005D2C3E /* Button.swift in Sources */,
 				24E3FF1C2C6C8D43005D2C3E /* PanModalPresentationAnimator.swift in Sources */,
+				2483BDFE2C85D35D0052CE7C /* GradientView.swift in Sources */,
 				24E3FF322C6CF513005D2C3E /* SmartScrollView.swift in Sources */,
 				24E3FEFF2C6BBD44005D2C3E /* TestViewController.swift in Sources */,
 				240624A22C73214A00717B7C /* CollectionView.swift in Sources */,
