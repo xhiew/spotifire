@@ -7,20 +7,6 @@
 
 import UIKit
 
-// MARK: - Track
-extension PlaybackScrubber {
-    class DefaultTrack: ShapeView {
-        
-    }
-}
-
-// MARK: - Indicator
-extension PlaybackScrubber {
-    class DefaultIndicator: ShapeView {
-        
-    }
-}
-
 // MARK: - InteractionState
 extension PlaybackScrubber {
     enum InteractionState {
@@ -55,7 +41,9 @@ extension PlaybackScrubber {
             case color(UIColor)
         }
         
+        /// Location of tick mark on the track as a percentage of the represented duration.
         var location: Double
+        
         var style: Style
     }
 }

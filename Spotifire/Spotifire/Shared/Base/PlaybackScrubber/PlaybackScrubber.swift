@@ -20,8 +20,8 @@ class PlaybackScrubber: UIControl {
     // MARK: Public Properties
     weak var delegate: PlaybackScrubberDelegate?
     
-//    var track: ShapeView = Track()
-//    var indicator: ShapeView = Indicator()
+    var track: Track = DefaultTrack()
+//    var indicator: Indicator = DefaultIndicator()
     
     /// The overall duration of the media this scrubber represents in seconds.
     var duration: TimeInterval = .zero {
@@ -46,7 +46,7 @@ class PlaybackScrubber: UIControl {
         get { playheadPosition }
     }
     
-    /// default is true.
+    /// The default value of this property is true.
     var isHapticFeedbackEnabled: Bool = true
     
     /// An ordered array of markers that denote sections within the media. These markers will be indicated visually,

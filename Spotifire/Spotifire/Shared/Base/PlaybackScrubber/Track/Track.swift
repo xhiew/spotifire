@@ -26,4 +26,20 @@ protocol Track: AnyObject {
     
     /// True if the corners of the track and the elapsed time fill should be rounded, false otherwise.
     var shouldRoundCorners: Bool { get set }
+    
+    /// An ordered array of tick marks to be represented on the track visually.
+    var tickMarks: [PlaybackScrubber.TickMark] { get set }
+    
+    /// The width of the tick marks to be displayed on the track.
+    var tickMarkWidth: CGFloat { get set }
+    
+    /// The amount that the track should grow vertically in each direction when being highlighted.
+    var highlightSize: CGFloat { get set }
+    
+    /// Visually highlights a section of track between two tick marks or one edge of the track (represented by passing in nil) and a tick mark.
+    /// Passing in nil for for both tick marks will result in the highlight being cleared.
+    func highlightSectionBetween(leftTickMark: PlaybackScrubber.TickMark?, rightTickMark: PlaybackScrubber.TickMark?)
+    
+    /// Clears any highlight previously set by `highlightSectionBetween(leftTickMark:rightTickMark:)`.
+    func clearHighlight()
 }
