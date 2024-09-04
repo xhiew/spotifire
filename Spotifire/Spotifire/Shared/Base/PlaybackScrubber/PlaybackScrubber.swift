@@ -20,6 +20,9 @@ class PlaybackScrubber: UIControl {
     // MARK: Public Properties
     weak var delegate: PlaybackScrubberDelegate?
     
+//    var track: ShapeView = Track()
+//    var indicator: ShapeView = Indicator()
+    
     /// The overall duration of the media this scrubber represents in seconds.
     var duration: TimeInterval = .zero {
         didSet {
@@ -53,6 +56,17 @@ class PlaybackScrubber: UIControl {
         set { sortedSectionMarkers = newValue.sorted(by: { $0.time < $1.time }) }
         get { sortedSectionMarkers }
     }
+    
+    /// The height of the track that the playhead moves along.
+    /// The default value of this property is 4 pt.
+    var trackHeight: CGFloat = 4
+    
+    /// True if the corners of the track and the elapsed time fill should be rounded, false otherwise.
+    /// The default value of this property is true.
+//    public var shouldRoundTrackCorners: Bool {
+//        set { track.shouldRoundCorners = newValue }
+//        get { track.shouldRoundCorners }
+//    }
     
     // MARK: Private Properties
     private var interactionState: InteractionState = .none
@@ -92,6 +106,11 @@ class PlaybackScrubber: UIControl {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         commonInit()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
     }
 }
 

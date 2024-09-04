@@ -5,7 +5,21 @@
 //  Created by xhieu on 3/9/24.
 //
 
-import Foundation
+import UIKit
+
+// MARK: - Track
+extension PlaybackScrubber {
+    class DefaultTrack: ShapeView {
+        
+    }
+}
+
+// MARK: - Indicator
+extension PlaybackScrubber {
+    class DefaultIndicator: ShapeView {
+        
+    }
+}
 
 // MARK: - InteractionState
 extension PlaybackScrubber {
@@ -26,9 +40,22 @@ extension PlaybackScrubber {
 
 // MARK: - SectionMarker
 extension PlaybackScrubber {
-    struct SectionMarker: Equatable {
+    struct SectionMarker {
         let time: TimeInterval
         var title: String?
         var description: String?
+    }
+}
+
+// MARK: - TickMark
+extension PlaybackScrubber {
+    struct TickMark {
+        enum Style {
+            case occlusion
+            case color(UIColor)
+        }
+        
+        var location: Double
+        var style: Style
     }
 }

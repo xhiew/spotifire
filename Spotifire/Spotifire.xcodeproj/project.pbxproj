@@ -32,6 +32,8 @@
 		2483BE032C8716070052CE7C /* PlaybackScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BE022C8716070052CE7C /* PlaybackScrubber.swift */; };
 		2483BE052C87237A0052CE7C /* PlaybackScrubber+Nested.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BE042C87237A0052CE7C /* PlaybackScrubber+Nested.swift */; };
 		2483BE072C872A080052CE7C /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483BE062C872A080052CE7C /* ShapeView.swift */; };
+		24921CEB2C88B67F0023E9B5 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24921CEA2C88B67F0023E9B5 /* Track.swift */; };
+		24921CED2C88B68D0023E9B5 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24921CEC2C88B68D0023E9B5 /* Indicator.swift */; };
 		24E3FE9E2C64CC26005D2C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */; };
 		24E3FEAA2C64CC27005D2C3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEA92C64CC27005D2C3E /* Base */; };
 		24E3FEB82C64D04E005D2C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E3FEB72C64D04E005D2C3E /* Assets.xcassets */; };
@@ -113,6 +115,8 @@
 		2483BE022C8716070052CE7C /* PlaybackScrubber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackScrubber.swift; sourceTree = "<group>"; };
 		2483BE042C87237A0052CE7C /* PlaybackScrubber+Nested.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaybackScrubber+Nested.swift"; sourceTree = "<group>"; };
 		2483BE062C872A080052CE7C /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
+		24921CEA2C88B67F0023E9B5 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		24921CEC2C88B68D0023E9B5 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		24E3FE9A2C64CC25005D2C3E /* Spotifire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E3FE9D2C64CC26005D2C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E3FEA92C64CC27005D2C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -298,6 +302,8 @@
 			children = (
 				2483BE022C8716070052CE7C /* PlaybackScrubber.swift */,
 				2483BE042C87237A0052CE7C /* PlaybackScrubber+Nested.swift */,
+				24921CEA2C88B67F0023E9B5 /* Track.swift */,
+				24921CEC2C88B68D0023E9B5 /* Indicator.swift */,
 			);
 			path = PlaybackScrubber;
 			sourceTree = "<group>";
@@ -720,6 +726,7 @@
 				24E3FECC2C6B9AFD005D2C3E /* View.swift in Sources */,
 				240624812C6E67DC00717B7C /* DeviceConstant.swift in Sources */,
 				2483BDDC2C81AF680052CE7C /* StickyTabBarController.swift in Sources */,
+				24921CEB2C88B67F0023E9B5 /* Track.swift in Sources */,
 				24E3FEF22C6BAD91005D2C3E /* NSMutableAttributedString+Ext.swift in Sources */,
 				2406249A2C71C88500717B7C /* TabBarController.swift in Sources */,
 				2483BDE02C81BE650052CE7C /* CGFloat+Ext.swift in Sources */,
@@ -742,6 +749,7 @@
 				24E3FED42C6BA168005D2C3E /* Label.swift in Sources */,
 				24E3FF2A2C6C8D43005D2C3E /* PanContainerView.swift in Sources */,
 				24E3FF222C6C8D43005D2C3E /* PanModalPresentable+Defaults.swift in Sources */,
+				24921CED2C88B68D0023E9B5 /* Indicator.swift in Sources */,
 				24E3FED02C6B9B3F005D2C3E /* UIView+Ext.swift in Sources */,
 				24E3FECE2C6B9B25005D2C3E /* String+Ext.swift in Sources */,
 				24E3FF252C6C8D43005D2C3E /* TransitionPresentable.swift in Sources */,
