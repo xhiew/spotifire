@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ShapeView: UIView {
+class ShapeView: ViewNonNib {
     override class var layerClass: AnyClass { CAShapeLayer.self }
     var shapeLayer: CAShapeLayer { layer as! CAShapeLayer }
 }
