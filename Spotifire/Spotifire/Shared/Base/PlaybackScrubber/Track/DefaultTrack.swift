@@ -85,4 +85,26 @@ extension DefaultTrack {
             $0.layer.addSublayer(highlightElapsedLayer)
         }
     }
+    
+    private func setPathForLayer(_ layer: CAShapeLayer, withRect rect: CGRect) {
+        let path = CGMutablePath(roundedRect: rect,
+                                 cornerWidth: cornerRadius,
+                                 cornerHeight: cornerRadius,
+                                 transform: nil)
+        
+        for tickMark in tickMarks where tickMark.style == .occlusion {
+            let intersection = rectForTickMark(tickMark).intersection(rect)
+            guard intersection != .null else { continue }
+            path.addRect(intersection)
+        }
+
+        layer.path = path
+    }
+    
+    private func rectForTickMark(_ tickMark: PlaybackScrubber.TickMark) -> CGRect {
+        return CGRect(x: insetDistance + (usableWidth - tickMarkWidth) * tickMark.location,
+                      y: .zero,
+                      width: tickMarkWidth,
+                      height: frame.height)
+    }
 }

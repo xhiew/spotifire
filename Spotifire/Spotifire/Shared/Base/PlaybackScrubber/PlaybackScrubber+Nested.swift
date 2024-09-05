@@ -36,7 +36,7 @@ extension PlaybackScrubber {
 // MARK: - TickMark
 extension PlaybackScrubber {
     struct TickMark {
-        enum Style {
+        enum Style: Equatable {
             case occlusion
             case color(UIColor)
         }
