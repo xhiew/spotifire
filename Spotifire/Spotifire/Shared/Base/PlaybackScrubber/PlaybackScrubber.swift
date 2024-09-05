@@ -21,7 +21,7 @@ class PlaybackScrubber: UIControl {
     weak var delegate: PlaybackScrubberDelegate?
     
     var track: Track = DefaultTrack()
-//    var indicator: Indicator = DefaultIndicator()
+    var indicator: Indicator = DefaultIndicator()
     
     /// The overall duration of the media this scrubber represents in seconds.
     var duration: TimeInterval = .zero {
