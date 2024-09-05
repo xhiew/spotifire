@@ -8,5 +8,12 @@
 import Foundation
 
 extension CGFloat {
+    /// Value is 1.0
     static let one = 1.0
+    
+    /// Half of the current value.
+    var halve: CGFloat { self / 2 }
+    
+    /// Twice the current value.
+    var twice: CGFloat { self * 2 }
 }
