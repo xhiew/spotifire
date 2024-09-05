@@ -15,7 +15,6 @@ protocol PlaybackScrubberDelegate: AnyObject {
 }
 
 // MARK: - PlaybackScrubber
-@IBDesignable
 class PlaybackScrubber: UIControl {
     // MARK: Public Properties
     weak var delegate: PlaybackScrubberDelegate?
