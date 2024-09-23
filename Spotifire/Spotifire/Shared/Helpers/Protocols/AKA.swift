@@ -10,7 +10,7 @@ import Foundation
 // MARK: Also Known As
 public protocol AKA {}
 
-public extension AKA where Self: Any {
+public extension AKA {
     static var aka: String {
         let name = String(describing: self)
         if let simpleName = name.split(separator: "<").first { return String(simpleName) }
