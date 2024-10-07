@@ -7,6 +7,10 @@
 
 import UIKit
 
+extension String? {
+    var isNilOrEmpty: Bool { self == nil || self == .empty }
+}
+
 extension String {
     static let zero = "0"
     static let one = "1"
