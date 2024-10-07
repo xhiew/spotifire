@@ -16,7 +16,7 @@ protocol Track: AnyObject {
     
     /// The percentage of progress to indicate visually via the `elapsedTintColor`.
     /// Must be in the range of 0...1
-    var progress: Double { get set }
+    var progress: CGFloat { get set }
     
     /// The color of the portion of the track that represents the elapsed time.
     var elapsedTintColor: UIColor? { get set }

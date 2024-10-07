@@ -11,7 +11,7 @@ final class DefaultTrack: ShapeView, Track {
     // MARK: Public Properties
     var insetDistance: CGFloat = .zero
     var usableWidth: CGFloat { return frame.width - insetDistance.twice }
-    var progress: Double = .zero
+    var progress: CGFloat = .zero
     var shouldRoundCorners: Bool = true
     var tickMarks: [PlaybackScrubber.TickMark] = []
     var tickMarkWidth: CGFloat = 2
@@ -50,11 +50,50 @@ final class DefaultTrack: ShapeView, Track {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        setPathForLayer(shapeLayer, withRect: bounds)
         
+        let elapsedRect = CGRect(origin: .zero,
+                                 size: CGSize(width: insetDistance + usableWidth * progress,
+                                                             height: frame.height))
+        
+        setPathForLayer(elapsedLayer, withRect: elapsedRect)
+        highlightView.frame = bounds.insetBy(dx: .zero, dy: -highlightSize)
+        highlightView.layer.cornerRadius = cornerRadius + highlightSize
+        
+        if let path = highlightView.shapeLayer.path {
+            let elapsedIntersection = elapsedRect
+                .insetBy(dx: .zero, dy: -highlightSize) // highlightView is taller
+                .offsetBy(dx: .zero, dy: highlightSize) // and its origin is offset
+                .intersection(path.boundingBox)
+            highlightElapsedLayer.path = CGPath(rect: elapsedIntersection, transform: nil)
+        }
     }
     
     func highlightSectionBetween(leftTickMark: PlaybackScrubber.TickMark?, rightTickMark: PlaybackScrubber.TickMark?) {
+        guard leftTickMark != nil || rightTickMark != nil else {
+            clearHighlight()
+            return
+        }
         
+        let minX: CGFloat = {
+            if let leftTickMark { return rectForTickMark(leftTickMark).maxX }
+            return .zero
+        }()
+        
+        let maxX: CGFloat = {
+            if let rightTickMark { return rectForTickMark(rightTickMark).minX }
+            return frame.maxX
+        }()
+        
+        let highlightRect = CGRect(x: minX, y: .zero, width: maxX - minX, height: frame.height + highlightSize.twice)
+        highlightView.shapeLayer.path = CGPath(rect: highlightRect, transform: nil)
+    }
+    
+    func highlightTrack() {
+        let highlightRect = CGRect(origin: .zero,
+                                   size: CGSize(width: frame.width,
+                                                height: frame.height + highlightSize.twice))
+        highlightView.shapeLayer.path = CGPath(rect: highlightRect, transform: nil)
     }
     
     func clearHighlight() { [highlightView.shapeLayer, highlightElapsedLayer].forEach { $0.path = nil } }
@@ -78,6 +117,7 @@ extension DefaultTrack {
     private func configureHighlightView() {
         highlightElapsedLayer.fillColor = elapsedTintColor?.cgColor
         addSubview(highlightView)
+        
         highlightView.with {
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.clipsToBounds = true

@@ -16,4 +16,7 @@ extension CGFloat {
     
     /// Twice the current value.
     var twice: CGFloat { self * 2 }
+    
+    /// Type casting to Float.
+    var float: Float { return Float(self) }
 }

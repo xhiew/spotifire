@@ -36,7 +36,7 @@ final class DefaultIndicator: ShapeView, Indicator {
             $0.shadowRadius = 3
             $0.shadowOffset = CGSize(width: 0, height: 1)
             $0.shadowColor = UIColor.black.cgColor
-            $0.shadowOpacity = 0.3
+            $0.shadowOpacity = AlphaConstant.veryLight.float
         }
     }
 }
