@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - Expandable
 protocol Expandable where Self: UIViewController {
-    var minimisedView: View { get }
+    var minimisedView: UIView { get }
     var container: StickySupporting? { get set }
 }
 
@@ -33,7 +33,7 @@ class ExpandableViewController: ViewController {
     var isEnlarged = false
     weak var customTabBarController: StickySupporting?
     
-    private let minimisedView: View
+    private let minimisedView: UIView
     private let childViewController: Expandable
     
     // MARK: Animation Properties

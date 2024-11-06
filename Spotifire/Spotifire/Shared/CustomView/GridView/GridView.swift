@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GridView<CustomView>: UIStackView, Fillable where CustomView: View {
+class GridView<CustomView>: UIStackView, Fillable where CustomView: UIView {
     // MARK: Properties
     var numberOfColumns: Int!
     

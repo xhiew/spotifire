@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FlexGridView<CustomView>: GridView<CustomView> where CustomView: View {
+final class FlexGridView<CustomView>: GridView<CustomView> where CustomView: UIView {
     private var remainingSpaceStackView: CGFloat = .zero
     
     // Tương ứng với WIDTH của FlexGridView

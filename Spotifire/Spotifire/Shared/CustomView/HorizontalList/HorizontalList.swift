@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HorizontalList<CustomView>: View, Fillable where CustomView: View {
+class HorizontalList<CustomView>: UIView, Fillable where CustomView: UIView {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var centerConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollView: UIScrollView!
