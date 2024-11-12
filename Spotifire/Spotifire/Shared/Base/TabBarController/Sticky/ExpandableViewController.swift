@@ -47,7 +47,7 @@ class ExpandableViewController: ViewController {
         self.collapsedHeight = collapsedHeight
         self.animationDuration = animationDuration
         self.minimisedView = childViewController.minimisedView
-        super.init(nibName: nil, bundle: nil)
+        super.init()
     }
     
     required init(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
