@@ -89,6 +89,7 @@
 		24E3FF372C6DA834005D2C3E /* SafeAreaBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF352C6DA833005D2C3E /* SafeAreaBottomView.swift */; };
 		24E3FF382C6DA834005D2C3E /* SafeAreaTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF362C6DA834005D2C3E /* SafeAreaTopView.swift */; };
 		24E3FF3F2C6DAF3B005D2C3E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3FF3E2C6DAF3B005D2C3E /* Button.swift */; };
+		24FAEE4D2CE2F28B00ED1D57 /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FAEE4C2CE2F28B00ED1D57 /* Collection+Ext.swift */; };
 		24FB19D82C6E3FBF004BEA1D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FB19D72C6E3FBF004BEA1D /* Icons.xcassets */; };
 		24FB19DA2C6E3FD4004BEA1D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FB19D92C6E3FD4004BEA1D /* Colors.xcassets */; };
 /* End PBXBuildFile section */
@@ -178,6 +179,7 @@
 		24E3FF352C6DA833005D2C3E /* SafeAreaBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaBottomView.swift; sourceTree = "<group>"; };
 		24E3FF362C6DA834005D2C3E /* SafeAreaTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaTopView.swift; sourceTree = "<group>"; };
 		24E3FF3E2C6DAF3B005D2C3E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		24FAEE4C2CE2F28B00ED1D57 /* Collection+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Ext.swift"; sourceTree = "<group>"; };
 		24FB19D72C6E3FBF004BEA1D /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		24FB19D92C6E3FD4004BEA1D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -437,6 +439,7 @@
 				240624782C6E574F00717B7C /* UIButton+Ext.swift */,
 				240624822C6E6A1400717B7C /* UIApplication+Ext.swift */,
 				2483BDDF2C81BE650052CE7C /* CGFloat+Ext.swift */,
+				24FAEE4C2CE2F28B00ED1D57 /* Collection+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -779,6 +782,7 @@
 				24E3FEF42C6BAE66005D2C3E /* With.swift in Sources */,
 				2406247F2C6E66E900717B7C /* FlexGridView.swift in Sources */,
 				24E3FED42C6BA168005D2C3E /* Label.swift in Sources */,
+				24FAEE4D2CE2F28B00ED1D57 /* Collection+Ext.swift in Sources */,
 				24E3FF2A2C6C8D43005D2C3E /* PanContainerView.swift in Sources */,
 				24E3FF222C6C8D43005D2C3E /* PanModalPresentable+Defaults.swift in Sources */,
 				24921CED2C88B68D0023E9B5 /* Indicator.swift in Sources */,
