@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
-        print("deinit \(self)")
+        xlog("deinit \(self)")
     }
     
     override func viewDidLoad() {

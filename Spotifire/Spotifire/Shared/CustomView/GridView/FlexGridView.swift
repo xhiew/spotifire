@@ -48,7 +48,7 @@ final class FlexGridView<CustomView>: GridView<CustomView> where CustomView: UIV
             let view = onViewCreate(index, object)
             
             guard let object = object as? CustomStringConvertible else {
-                print("⚠️ FLEXGRIDVIEW WARNING: Object MUST conform to CustomStringConvertible")
+                xlog("⚠️ FLEXGRIDVIEW WARNING: Object MUST conform to CustomStringConvertible")
                 return
             }
             

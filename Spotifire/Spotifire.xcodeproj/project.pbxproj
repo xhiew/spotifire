@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240230052CF45462001232D8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240230042CF45462001232D8 /* Logger.swift */; };
 		240624792C6E574F00717B7C /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240624782C6E574F00717B7C /* UIButton+Ext.swift */; };
 		2406247D2C6E639900717B7C /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406247C2C6E639900717B7C /* GridView.swift */; };
 		2406247F2C6E66E900717B7C /* FlexGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406247E2C6E66E900717B7C /* FlexGridView.swift */; };
@@ -95,6 +96,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240230042CF45462001232D8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		240624782C6E574F00717B7C /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		2406247C2C6E639900717B7C /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		2406247E2C6E66E900717B7C /* FlexGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexGridView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240230032CF4544F001232D8 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				240230042CF45462001232D8 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 		240624772C6E573600717B7C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,6 +503,7 @@
 		24E3FF012C6C8CDB005D2C3E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				240230032CF4544F001232D8 /* Logger */,
 				240624772C6E573600717B7C /* Protocols */,
 				24E3FF342C6DA808005D2C3E /* SafeArea */,
 				24E3FF332C6DA7EE005D2C3E /* Keyboard */,
@@ -738,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E3FF3F2C6DAF3B005D2C3E /* Button.swift in Sources */,
+				240230052CF45462001232D8 /* Logger.swift in Sources */,
 				24E3FF1C2C6C8D43005D2C3E /* PanModalPresentationAnimator.swift in Sources */,
 				2483BDFE2C85D35D0052CE7C /* GradientView.swift in Sources */,
 				24E3FF322C6CF513005D2C3E /* SmartScrollView.swift in Sources */,
