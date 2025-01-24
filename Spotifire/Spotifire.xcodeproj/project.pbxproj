@@ -468,7 +468,6 @@
 		24E3FEBE2C6B912D005D2C3E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				2483BE012C8715160052CE7C /* PlaybackScrubber */,
 				2406249B2C71D68000717B7C /* NavigationController */,
 				240624982C71C87300717B7C /* TabBarController */,
 				240624A02C73213800717B7C /* CollectionView */,
@@ -601,6 +600,7 @@
 		24E3FF2E2C6C91E3005D2C3E /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				2483BE012C8715160052CE7C /* PlaybackScrubber */,
 				2406247B2C6E635200717B7C /* HorizontalList */,
 				2406247A2C6E634400717B7C /* GridView */,
 			);
